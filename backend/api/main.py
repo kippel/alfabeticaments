@@ -3,7 +3,7 @@ from fastapi import FastAPI
 from api.database import db
 from api.schemas import User
 from api.models import Users
-from .routers import auth
+from .routers import auth, courses
 
 app = FastAPI()
 
@@ -23,3 +23,4 @@ async def root():
 
 
 app.include_router(auth.router)
+app.include_router(courses.router)

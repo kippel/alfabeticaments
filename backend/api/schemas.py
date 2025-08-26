@@ -3,7 +3,7 @@ from pydantic import BaseModel
 
 #####################################
 class UserInfo(BaseModel):
-    id: int
+    id: str
     username: str
 
 class Token(BaseModel):
@@ -34,3 +34,9 @@ class UserCreateRegister(BaseModel):
 class User(BaseModel):
     name: str
     pasword: str
+
+#############################################
+## courses
+
+class CoursesRequest(BaseModel):
+    coursesId: str

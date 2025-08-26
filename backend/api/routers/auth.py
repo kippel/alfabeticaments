@@ -25,7 +25,7 @@ async def authenticate_user(username: str, password: str, db):
     user = await db["users"].find_one({"username": username})
     if not user:
         return False
-    if not bcrypt_context.verify(password, user["hashed_password"]):
+    if not bcrypt_context.verify(password, user["password"]):
         return False
     return user
 
