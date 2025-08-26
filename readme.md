@@ -32,3 +32,19 @@ volumes:
 
 
 ```
+
+
+docker build -t backend .
+docker run --rm backend pytest
+
+docker run --rm backend pytest tests/
+
+
+``` todo
+docker compose up --build
+
+docker-compose exec backend pytest -v
+```
+
+
+https://github.com/Pytest-with-Eric/pytest-fastapi-crud-example/blob/master/app/user.py
