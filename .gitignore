@@ -1,0 +1,8 @@
+
+
+backend/.venv/*
+backend/api/__pycache__/*
+backend/api/routers/__pycache__/*
+
+
+docker-compose.yml
