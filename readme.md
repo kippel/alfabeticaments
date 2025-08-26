@@ -43,7 +43,7 @@ docker run --rm backend pytest tests/
 ``` todo
 docker compose up --build
 
-docker-compose exec backend pytest -v
+docker compose exec backend uv run pytest -v
 ```
 
 

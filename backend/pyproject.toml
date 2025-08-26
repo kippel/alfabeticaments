@@ -18,3 +18,9 @@ dependencies = [
 filterwarnings = [
     "ignore::DeprecationWarning"
 ]
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "httpx"
+]

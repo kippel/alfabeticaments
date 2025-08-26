@@ -10,8 +10,8 @@ RUN pip install --no-cache-dir uv
 RUN uv sync --frozen --no-cache
 
 # Instal·lem FastAPI, Uvicorn, Pytest i HTTPX
-#RUN uv add passlib[bcrypt] fastapi uvicorn[standard] pytest httpx motor python-jose
-RUN pip install --no-cache-dir passlib[bcrypt] fastapi uvicorn[standard] pytest httpx motor python-jose python-multipart
+RUN uv add --no-cache-dir passlib[bcrypt] fastapi uvicorn[standard] pytest httpx motor python-jose python-multipart
+
 
 # Copiem tot el codi
 COPY . .
