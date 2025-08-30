@@ -5,6 +5,13 @@ from api.workouts.courser import UserRequestId, UserCreateUpdate
 
 router = APIRouter(prefix="/courses", tags=["courses"])
 
+@router.get("/red")
+async def courses_red(user: user_dependency, db: db_dependency): 
+    courses_all = [doc async for doc in db["courses"].find()]
+
+    return { "courses" : courses_all}
+
+
 '''
     GET /courses
 '''
