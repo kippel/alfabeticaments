@@ -6,8 +6,7 @@ COPY pyproject.toml uv.lock ./
 
 # Instal·lem uv i sincronitzem dependències
 RUN pip install --no-cache-dir uv \
-    && uv sync --frozen --no-cache \
-    && uv add --no-cache-dir passlib[bcrypt] fastapi uvicorn[standard] pytest httpx motor python-jose python-multipart
+    && uv sync --frozen --no-cache 
 
 
 RUN uv add --no-cache-dir trio

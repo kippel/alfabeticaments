@@ -6,7 +6,7 @@ from jose import jwt
 from dotenv import load_dotenv
 import os
 from bson import ObjectId
-from api.deps import (
+from api.database.deps import (
     db_dependency,
     bcrypt_context 
 )

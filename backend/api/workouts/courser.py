@@ -1,4 +1,4 @@
-from api.deps import db_dependency, user_dependency
+from api.database.deps import db_dependency, user_dependency
 
 class UserRequest:
     def __init__(self, user: user_dependency, db: db_dependency):

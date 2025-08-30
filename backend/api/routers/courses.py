@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-from api.deps import db_dependency, user_dependency
+from api.database.deps import db_dependency, user_dependency
 from api.schemas import CoursesRequest
 from api.workouts.courser import UserRequestId, UserCreateUpdate
 
