@@ -14,10 +14,15 @@ dependencies = [
     "python-jose>=3.5.0",
 ]
 
+
 [tool.pytest.ini_options]
+pythonpath = "."
 filterwarnings = [
     "ignore::DeprecationWarning"
 ]
+
+
+
 
 [dependency-groups]
 dev = [

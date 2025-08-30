@@ -9,5 +9,5 @@ def test_root():
     assert response.status_code == 200
     assert response.json() == {"message": "Hello from FastAPI + MongoDB"}
 
-
+    
 
