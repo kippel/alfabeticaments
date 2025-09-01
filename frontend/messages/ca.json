@@ -1,0 +1,11 @@
+{
+  "Login": {
+    "title": "Inicia sessió",
+    "register" : "Registra't",
+    "alfabeticament" : "Alfabeticament"
+  },
+  "Register": {
+    "alfabeticament" : "Alfabeticament",
+    "login" : "Login"
+  }
+}
