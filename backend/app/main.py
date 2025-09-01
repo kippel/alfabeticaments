@@ -8,12 +8,6 @@ from app.lib import serializes
 app = FastAPI()
 
 
-''' 
-def serialize_user(user: dict) -> dict:
-    """Converteix l'_id de MongoDB a string per JSON."""
-    return {**user, "_id": str(user["_id"])}
-'''
-
 @app.post("/")
 async def root():
 

@@ -40,3 +40,9 @@ class User(BaseModel):
 
 class CoursesRequest(BaseModel):
     coursesId: str
+
+#######################################
+# abc
+
+class AbcRequest(BaseModel):
+    coursesId: str
