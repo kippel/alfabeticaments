@@ -2,17 +2,29 @@
     {
         "title": "Monosíl.labs",
         "name": "Paraula d’una sola síl·laba",
-        "courses": "ca"
+        "courses": "ca",
+        "abc_list" : [
+            {
+                "abc_id": 1,
+                "title": "Monosíl.labs 1"
+            },
+            {
+                "abc_id": 2,
+                "title": "Monosíl.labs 2"
+            }
+        ]
     },
     {
         "title": "Bisíl·labs",
         "name": "Un bisíl·lab és una paraula que té dues síl·labes",
-        "courses": "ca"
+        "courses": "ca",
+        "abc_list" : []
     },
     {
         "title": "Trisílabs",
         "name": "Un trisíl·lab és una paraula que té tres síl·labes",
-        "courses": "ca"
+        "courses": "ca",
+        "abc_list" : []
     }
     ]
 }

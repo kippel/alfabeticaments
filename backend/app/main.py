@@ -23,13 +23,13 @@ async def root():
     users: List[dict] = [serializes(user) async for user in users_cursor]
 
     
-    #abcedaris_abc = db.abcedaris_abc.find()
+    abcedaris_abc = db.abcedaris_abc.find()
     courses = db.courses.find()
     print(courses)
 
     courses_all = [serializes(cour) async for cour in courses]
-    #abcedaris = [serialize_user(abcedari) async for abcedari in abcedaris_abc]
-    return {"message": "Hello from FastAPI + MongoDB", "user" : users, "courses" : courses_all} 
+    abcedaris = [serializes(abcedari) async for abcedari in abcedaris_abc]
+    return {"message": "Hello from FastAPI + MongoDB", "user" : users, "courses" : courses_all, "abcedaris" : abcedaris} 
 
 
 app.include_router(auth.router)
