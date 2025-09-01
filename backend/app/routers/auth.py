@@ -6,11 +6,11 @@ from jose import jwt
 from dotenv import load_dotenv
 import os
 from bson import ObjectId
-from api.database.deps import (
+from app.database.deps import (
     db_dependency,
     bcrypt_context 
 )
-from api.schemas import Token, UserCreateRequest, UserRequest, UserCreateRegister
+from app.schemas import Token, UserCreateRequest, UserRequest, UserCreateRegister
 
 load_dotenv()
 
@@ -57,7 +57,7 @@ async def create_register(create_registers: UserCreateRegister, db: db_dependenc
 
     new_user = {
         "username": create_registers.username,
-        "hashed_password": bcrypt_context.hash(create_registers.password),
+        "password": bcrypt_context.hash(create_registers.password),
     }
     result = await db["users"].insert_one(new_user)
 
@@ -76,7 +76,7 @@ async def create_user(db: db_dependency, create_user_request: UserCreateRequest)
 
     new_user = {
         "username": create_user_request.username,
-        "hashed_password": bcrypt_context.hash(create_user_request.password),
+        "password": bcrypt_context.hash(create_user_request.password),
     }
     result = await db["users"].insert_one(new_user)
 

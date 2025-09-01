@@ -1,0 +1,18 @@
+{ "abc_bar" :[    
+    {
+        "title": "Monosíl.labs",
+        "name": "Paraula d’una sola síl·laba",
+        "courses": "ca"
+    },
+    {
+        "title": "Bisíl·labs",
+        "name": "Un bisíl·lab és una paraula que té dues síl·labes",
+        "courses": "ca"
+    },
+    {
+        "title": "Trisílabs",
+        "name": "Un trisíl·lab és una paraula que té tres síl·labes",
+        "courses": "ca"
+    }
+    ]
+}

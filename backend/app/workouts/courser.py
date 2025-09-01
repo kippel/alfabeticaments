@@ -1,9 +1,11 @@
-from api.database.deps import db_dependency, user_dependency
+from app.database.deps import db_dependency, user_dependency
+from app.lib import serializes
 
 class UserRequest:
     def __init__(self, user: user_dependency, db: db_dependency):
         self.user = user
         self.db = db
+        
 
     def courses_data(self, user_courses: dict):
         return {
@@ -31,7 +33,7 @@ class UserRequestId(UserRequest):
 
     async def abc_list(self):
         cursor = self.db["user_abc_list"].find({"user_id": self.user["id"]})
-        return [doc async for doc in cursor]
+        return [ serializes(doc) async for doc in cursor]
 
 
 class UserCreateUpdate(UserRequest):
@@ -39,6 +41,7 @@ class UserCreateUpdate(UserRequest):
         user_courses = await self.db["user_courses"].find_one({"user_id": self.user["id"]})
 
         if not user_courses:
+            ## todo
             cour_new = {
                 "courses_title": courses_all["courses_title"],
                 "image_src": courses_all["image_src"],
@@ -48,10 +51,11 @@ class UserCreateUpdate(UserRequest):
             result = await self.db["user_courses"].insert_one(cour_new)
             return {**cour_new, "_id": result.inserted_id}
         else:
-            await self.db["user_courses"].update_one(
+            
+            await self.db["courses"].update_one(
                 {"user_id": self.user["id"]},
                 {"$set": {
-                    "courses_title": courses_all["courses_title"],
+                    "courses_title": courses_all["title"],
                     "image_src": courses_all["image_src"],
                     "courses": courses_all["courses"]
                 }}

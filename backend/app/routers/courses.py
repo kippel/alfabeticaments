@@ -1,13 +1,14 @@
 from fastapi import APIRouter, HTTPException
-from api.database.deps import db_dependency, user_dependency
-from api.schemas import CoursesRequest
-from api.workouts.courser import UserRequestId, UserCreateUpdate
+from app.database.deps import db_dependency, user_dependency
+from app.schemas import CoursesRequest
+from app.workouts.courser import UserRequestId, UserCreateUpdate
+from app.lib import serializes
 
 router = APIRouter(prefix="/courses", tags=["courses"])
 
-@router.get("/red")
-async def courses_red(user: user_dependency, db: db_dependency): 
-    courses_all = [doc async for doc in db["courses"].find()]
+@router.get("/blue")
+async def courses_blue(user: user_dependency, db: db_dependency): 
+    courses_all = [serializes(doc) async for doc in db["courses"].find()]
 
     return { "courses" : courses_all}
 
@@ -17,7 +18,7 @@ async def courses_red(user: user_dependency, db: db_dependency):
 '''
 @router.get("/")
 async def courses(user: user_dependency, db: db_dependency):
-    courses_all = [doc async for doc in db["courses"].find()]
+    courses_all = [serializes(doc) async for doc in db["courses"].find()]
 
     n = UserRequestId(user, db)
     courses = await n.courses()
@@ -33,7 +34,7 @@ async def courses(user: user_dependency, db: db_dependency):
 @router.post("/")
 async def courses_post(payload: CoursesRequest, user: user_dependency, db: db_dependency):
     courses_all = await db["courses"].find_one({"courses": payload.coursesId})
-
+    
     if not courses_all:
         raise HTTPException(status_code=404, detail="Course not found")
 
