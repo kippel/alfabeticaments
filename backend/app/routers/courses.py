@@ -15,9 +15,13 @@ async def courses_blue(user: user_dependency, db: db_dependency):
 
 '''
     GET /courses
+
+    POST /courses/1
+
 '''
-@router.get("/")
+@router.post("/uns")
 async def courses(user: user_dependency, db: db_dependency):
+    print('oooooooooooooooooooooooo')
     courses_all = [serializes(doc) async for doc in db["courses"].find()]
 
     n = UserRequestId(user, db)
@@ -31,9 +35,10 @@ async def courses(user: user_dependency, db: db_dependency):
     POST /courses
     { "coursesId": "ca" }
 '''
-@router.post("/")
+@router.post("/dos")
 async def courses_post(payload: CoursesRequest, user: user_dependency, db: db_dependency):
     courses_all = await db["courses"].find_one({"courses": payload.coursesId})
+    print(courses_all)
     
     if not courses_all:
         raise HTTPException(status_code=404, detail="Course not found")
@@ -41,7 +46,7 @@ async def courses_post(payload: CoursesRequest, user: user_dependency, db: db_de
     n = UserCreateUpdate(user, db)
     courses = await n.courses(courses_all)
     data = n.courses_data(courses)
-
+    
     return {"user_courses": data}
 
 

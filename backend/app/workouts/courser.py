@@ -52,7 +52,7 @@ class UserCreateUpdate(UserRequest):
             return {**cour_new, "_id": result.inserted_id}
         else:
             
-            await self.db["courses"].update_one(
+            await self.db["user_courses"].update_one(
                 {"user_id": self.user["id"]},
                 {"$set": {
                     "courses_title": courses_all["title"],
