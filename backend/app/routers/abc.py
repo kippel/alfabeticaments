@@ -6,7 +6,7 @@ from app.lib import serializes
 
 router = APIRouter(prefix="/abc", tags=["abc"])
 
-@router.post("/")
+@router.post("/abcedaris")
 async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRequest):
     
     abcedaris_abc = db.abcedaris_abc.find({"courses": payload.coursesId})
