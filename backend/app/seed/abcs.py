@@ -5,7 +5,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 async def abcs(db):
 
-
+    await db.user_abc_list.delete_many({})
     await db.abcedaris_abc.delete_many({})
 
     with open(os.path.join(BASE_DIR, 'code/abc.json'), 'r') as file:

@@ -24,7 +24,7 @@ async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRe
     for res in abcedaris:
         # If user progress does not exist, create it
         if res["title_name"] not in user_map:
-            r = [{"user_abc_list": 1} for _ in range(len(res["abc_list"]))]
+            r = [{"user_abc_list": 1, "number_bar" : 1} for _ in range(len(res["abc_list"]))]
             cour_create = {
                 "courses": payload.coursesId,
                 "user_id": user["id"],
@@ -37,52 +37,8 @@ async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRe
         # Merge progress into abc_list
         numbro = user_map[res["title_name"]]["numbro"]
         for ch, prog in zip(res["abc_list"], numbro):
-            ch.update(prog)
+            
+            red = { 'user_abc_list' :prog['user_abc_list'] }
+            ch.update(red)
 
     return {"abcedaris": abcedaris}
-
-
-
-'''
-@router.post("/abcedaris")
-async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRequest):
-    
-    abcedaris_abc = db.abcedaris_abc.find({"courses": payload.coursesId})
-    
-    abcedaris = [serializes(abcedari) async for abcedari in abcedaris_abc]
-    
-    for res in abcedaris:
-        
-        #print(res)
-
-        count = await db.user_abc_list.count_documents(
-            {"courses": payload.coursesId,
-             "user_id": user["id"],
-             "title_name" : res["title_name"]  })
-        if count == 0:
-            
-            r = [[{"user_abc_list": 1}] for _ in range(len(res["title_name"]))]
-
-            cour_create = {
-                "courses": payload.coursesId,
-                "user_id": user["id"],
-                "title_name" : res["title_name"],
-                "numbro" : r
-            }
-            await db.user_abc_list.insert_one(cour_create)
-        
-
-
-        rect = await db.user_abc_list.find(
-            {
-                "courses": payload.coursesId,
-                "user_id": user["id"],
-                "title_name": res["title_name"],
-            }
-            ).to_list(length=1)
-        if rect:
-            for i, ch in enumerate(res["abc_list"]):
-                ch.update(rect[0]['numbro'][i])
-    
-    return { "abcedaris" : abcedaris}
-'''
