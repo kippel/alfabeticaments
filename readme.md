@@ -51,3 +51,7 @@ docker compose exec backend uv run python -m app.cli
 
 
 https://github.com/Pytest-with-Eric/pytest-fastapi-crud-example/blob/master/app/user.py
+
+
+
+- bakcend /backend/app/routers/abc.py /abc/abcedaris. Siguiendo srp, quiero que me dividas los diferentes componentes por responsabilidad y los crees en /backend/app/workouts/abcs.py
