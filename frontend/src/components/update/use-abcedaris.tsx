@@ -14,6 +14,7 @@ export type AbcedarisProps = {
   title: string;
   courses: string;
   name: string;
+  url_text: string;
   abc_list: AbcListType[];
 };
 

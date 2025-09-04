@@ -21,6 +21,7 @@ function AbcabcPage(){
                      
                        title={abc.title}
                        name={abc.name} 
+                       url_text={abc.url_text}
                     />
                     
                     <AbcListButton abc_list={abc.abc_list} />

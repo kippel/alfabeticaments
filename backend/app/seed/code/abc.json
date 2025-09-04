@@ -3,28 +3,119 @@
         "title": "Monosíl.labs",
         "name": "Paraula d’una sola síl·laba",
         "courses": "ca",
+        "url_text" : "special",
+        "title_name" : "monosillabs",
         "abc_list" : [
             {
-                "abc_id": 1,
+                "abc_id": 0,
                 "title": "Monosíl.labs 1"
             },
             {
-                "abc_id": 2,
+                "abc_id": 1,
                 "title": "Monosíl.labs 2"
+            },
+            {
+                "abc_id": 2,
+                "title": "Monosíl.labs 3"
+            },
+            {
+                "abc_id": 3,
+                "title": "Monosíl.labs 4"
+            },{
+                "abc_id": 4,
+                "title": "Monosíl.labs 5"
+            },{
+                "abc_id": 5,
+                "title": "Monosíl.labs 6"
+            },{
+                "abc_id": 6,
+                "title": "Monosíl.labs 7"
+            },{
+                "abc_id": 7,
+                "title": "Monosíl.labs 8"
+            },{
+                "abc_id": 8,
+                "title": "Monosíl.labs 9"
+            },{
+                "abc_id": 9,
+                "title": "Monosíl.labs 10"
+            },{
+                "abc_id": 10,
+                "title": "Monosíl.labs 11"
+            },{
+                "abc_id": 11,
+                "title": "Monosíl.labs 12"
+            },{
+                "abc_id": 12,
+                "title": "Monosíl.labs 13"
             }
+
         ]
     },
     {
         "title": "Bisíl·labs",
         "name": "Un bisíl·lab és una paraula que té dues síl·labes",
         "courses": "ca",
-        "abc_list" : []
+        "url_text" : "special",
+        "title_name" : "bisillabs",
+        "abc_list" : [
+            {
+                "abc_id": 0,
+                "title": "Bisíl·labs 1"
+            },
+            {
+                "abc_id": 1,
+                "title": "Bisíl·labs 2"
+            },
+            {
+                "abc_id": 2,
+                "title": "Bisíl·labs 3"
+            },
+            {
+                "abc_id": 3,
+                "title": "Bisíl·labs 4"
+            },{
+                "abc_id": 4,
+                "title": "Bisíl·labs 5"
+            },{
+                "abc_id": 5,
+                "title": "Bisíl·labs 6"
+            },{
+                "abc_id": 6,
+                "title": "Bisíl·labs 7"
+            },{
+                "abc_id": 7,
+                "title": "Bisíl·labs 8"
+            },{
+                "abc_id": 8,
+                "title": "Bisíl·labs 9"
+            },{
+                "abc_id": 9,
+                "title": "Bisíl·labs 10"
+            },{
+                "abc_id": 10,
+                "title": "Bisíl·labs 11"
+            },{
+                "abc_id": 11,
+                "title": "Bisíl·labs 12"
+            },{
+                "abc_id": 12,
+                "title": "Bisíl·labs 13"
+            }
+        ]
     },
     {
         "title": "Trisílabs",
         "name": "Un trisíl·lab és una paraula que té tres síl·labes",
         "courses": "ca",
-        "abc_list" : []
+        "url_text" : "danger",
+        "title_name" : "trisilabs",
+        "abc_list" : [
+            {
+                "abc_id": 0,
+                "title": "Trisílabs 1"
+            }
+        ]
     }
     ]
 }
