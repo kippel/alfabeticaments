@@ -1,8 +1,15 @@
 import pytest
+import asyncio
+from httpx import AsyncClient, ASGITransport
 from motor.motor_asyncio import AsyncIOMotorClient
-from api import database
-from api.main import app
-from fastapi.testclient import TestClient
+from app.main import app
+
+@pytest.fixture(scope="function")
+def event_loop():
+    """Create an instance of the default event loop for each test."""
+    loop = asyncio.get_event_loop_policy().new_event_loop()
+    yield loop
+    loop.close()
 
 @pytest.fixture(scope="session")
 def mongo_url():
@@ -13,16 +20,11 @@ def mongo_url():
 async def mock_db(monkeypatch, mongo_url):
     client = AsyncIOMotorClient(mongo_url)
     db = client.get_default_database()
-    monkeypatch.setattr(database, "db", db)
-
-    #await db_bar(db)
-
+    monkeypatch.setattr("app.database.database.db", db)
     yield db
     client.close()
 
 @pytest.fixture
-def test_app():
-
-
-    with TestClient(app) as client:
+async def async_client():
+    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
         yield client

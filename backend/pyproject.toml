@@ -22,7 +22,7 @@ pythonpath = "."
 filterwarnings = [
     "ignore::DeprecationWarning"
 ]
-asyncio_mode = "strict"
+asyncio_mode = "auto"
 anyio_backend = "asyncio"
 
 
