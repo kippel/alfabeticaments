@@ -15,7 +15,7 @@ type Props = {
     abc_id: number;
     title: string;
     index: number;
-    
+    href_abc: string;
 }
 
 
@@ -24,7 +24,7 @@ export const ListButton = ({
     abc_id,
     title,
     index,
-    
+    href_abc
     
 }: Props) => {
 
@@ -32,7 +32,7 @@ export const ListButton = ({
     
     const { rightPosition } = CycleIndex({ index });
 
-    const href = `/lesson/${abc_id}`
+    const href = `${href_abc}/${abc_id}`    //`/lesson/${abc_id}`
     const percentage = 20;
     
     console.log("bar")

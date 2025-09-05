@@ -15,8 +15,11 @@ export type AbcedarisProps = {
   courses: string;
   name: string;
   url_text: string;
+  title_name: string;
   abc_list: AbcListType[];
 };
+
+
 
 export const useAbcedaris = () => {
   const [abcedaris, setAbcedaris] = useState<AbcedarisProps[]>([]);

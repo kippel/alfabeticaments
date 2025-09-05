@@ -24,7 +24,7 @@ function AbcabcPage(){
                        url_text={abc.url_text}
                     />
                     
-                    <AbcListButton abc_list={abc.abc_list} />
+                    <AbcListButton abc_list={abc.abc_list} title_name={abc.title_name} />
                     </div>
                 ))
             }

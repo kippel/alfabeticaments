@@ -3,10 +3,14 @@ import { ListButton } from "./list-button"
 
 type AbcListButtonProps = {
   abc_list: AbcListType[];
+  title_name: string;
 };
 
 
-export const AbcListButton = ({ abc_list }: AbcListButtonProps) => {
+export const AbcListButton = ({ 
+    abc_list,
+    title_name
+}: AbcListButtonProps) => {
 
     
     return (
@@ -17,10 +21,11 @@ export const AbcListButton = ({ abc_list }: AbcListButtonProps) => {
                    abc_id={abc_list.abc_id} 
                    title={abc_list.title}
                    index={0} 
-                   />
+                   href_abc={title_name}
+
+                />
                 
             ))}
-        
         </div>
     )
 };
