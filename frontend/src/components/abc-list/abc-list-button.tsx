@@ -4,12 +4,14 @@ import { ListButton } from "./list-button"
 type AbcListButtonProps = {
   abc_list: AbcListType[];
   title_name: string;
+  palabras: string;
 };
 
 
 export const AbcListButton = ({ 
     abc_list,
-    title_name
+    title_name,
+    palabras
 }: AbcListButtonProps) => {
 
     
@@ -20,7 +22,8 @@ export const AbcListButton = ({
                   key={index}
                    abc_id={abc_list.abc_id} 
                    title={abc_list.title}
-                   index={0} 
+                   palabras={palabras}
+                   index={index} 
                    href_abc={title_name}
 
                 />

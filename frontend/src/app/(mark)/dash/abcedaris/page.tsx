@@ -1,6 +1,6 @@
 "use client";
 import { Unit } from './unit';
-import { DivLesson } from "@/components/div/div-lesson";
+import { DivUnLesson } from "@/components/div/div-lesson";
 import { useAbcedaris, AbcedarisProps} from "@/components/update/use-abcedaris";
 import { AbcListButton } from "@/components/abc-list/abc-list-button";
 
@@ -12,7 +12,7 @@ function AbcabcPage(){
     
     
     return (
-        <DivLesson text="Abc">
+        <DivUnLesson>
         
             {
                 abcedaris.map((abc : AbcedarisProps, index ) => (
@@ -24,11 +24,14 @@ function AbcabcPage(){
                        url_text={abc.url_text}
                     />
                     
-                    <AbcListButton abc_list={abc.abc_list} title_name={abc.title_name} />
+                    <AbcListButton 
+                        abc_list={abc.abc_list} 
+                        title_name={abc.title_name} 
+                        palabras={abc.palabras} />
                     </div>
                 ))
             }
-        </DivLesson>
+        </DivUnLesson>
         
     )
 }

@@ -7,6 +7,7 @@ import { useCourses } from "@/components/ProviderCourses";
 export type AbcListType = {
   abc_id: number;
   title: string;
+  palabras: string;
 };
 
 export type AbcedarisProps = {
@@ -16,6 +17,7 @@ export type AbcedarisProps = {
   name: string;
   url_text: string;
   title_name: string;
+  
   abc_list: AbcListType[];
 };
 
@@ -65,45 +67,58 @@ export const useAbcedaris = () => {
 };
 
 
-/*
-type AbcListType = {
-    id: number;
-    abc_id: number;
-    courses: string;
-    title: string;
-    number_bar: number;
-}
+type AbcedListProps = {
+  id_abc: number;
+  palabras: string;
+};
 
-export const useAbcList = ({ abc_id}) => {
-    const [abcList,setAbcList] = useState<AbcListType[]>([]);
-    const { data: session } = useAuth();
-    useEffect(() => {
-        const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-        if (!session?.accessToken || !backendUrl) return;
+type AbcedType = {
+  number: number;
+  number_bar: number;
+  abc_dos_id: number;
+  lletres: string;
+  voice_mp3: string;
+  vocals_images: string;
+};
 
-        async function fetchAbecedaris() {
-            try {
-                const res = await axios.post<{ abc_list:AbcListType[]}>(
-                    `${backendUrl}/abc/abc_list`, 
-                    { abc_id: abc_id},
-                    {
-                        headers: {
-                            Authorization: `Bearer ${session.accessToken}`,
-                        },
-                    }
-                );
-                setAbcList(res.data.abc_list);
-                
-            } catch (error) {
-                console.error("Error fetching abecedaris:", error);
-            } 
-            
+type AbcedListType = {
+  abc_id: number;
+  courses: string;
+  palabras: string;
+  abc_list: AbcedType[];
+};
+
+export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
+  const [abcedlist, setAbcedList] = useState<AbcedListType | null>(null);
+  const { data: session } = useAuth();
+  const { courses } = useCourses();
+
+  useEffect(() => {
+    const controller = new AbortController();
+    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+    if (!session?.accessToken || !backendUrl) return;
+
+    async function fetchAbecedList() {
+      console.log(courses)
+      console.log(id_abc)
+      console.log(palabras)
+      const res = await axios.post(
+        `${backendUrl}/abc/abced_list`,
+        {
+          coursesId: courses,
+          id_abc,
+          palabras,
+        },
+        {
+          headers: { Authorization: `Bearer ${session.accessToken}` },
+          signal: controller.signal,
         }
+      );
+      setAbcedList(res.data); // 👈 guardamos todo el objeto
+    }
 
-        fetchAbecedaris();
+    fetchAbecedList();
+  }, [session?.accessToken, courses, id_abc, palabras]);
 
-    },[session, abc_id]);
-
-    return { abcList }
-}
-*/
+  return { abcedlist };
+};

@@ -11,7 +11,7 @@ async def user(db):
     qwerty = bcrypt_context.hash("qwerty")
 
     users = [
-        {"username": "kippel", "password": qwerty},
+        {"username": "admin", "password": qwerty},
     ]
     await db.users.insert_many(users)
 

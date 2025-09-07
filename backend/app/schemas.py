@@ -46,3 +46,9 @@ class CoursesRequest(BaseModel):
 
 class AbcRequest(BaseModel):
     coursesId: str
+
+
+class AbcListRequest(BaseModel):
+    coursesId: str
+    id_abc: int
+    palabras: str

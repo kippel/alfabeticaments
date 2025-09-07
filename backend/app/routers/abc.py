@@ -1,5 +1,8 @@
 from fastapi import APIRouter
-from app.schemas import AbcRequest
+from app.schemas import (
+    AbcRequest,
+    AbcListRequest
+)
 from app.database.deps import db_dependency, user_dependency
 from app.lib import serializes
 from bson import ObjectId
@@ -42,3 +45,40 @@ async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRe
             ch.update(red)
 
     return {"abcedaris": abcedaris}
+
+
+
+@router.post('/abced_list')
+async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcListRequest):
+    '''
+    monosillabs
+    '''
+    
+    abcedaris_cursor = await db.abcedaris_abc.find_one(
+        {
+            "courses": payload.coursesId,
+            "palabras": payload.palabras,
+            "abc_list.abc_id": payload.id_abc
+        },
+        {
+            "abc_list.$": 1  # Només retorna l’element de l’array que fa match
+        }
+    )
+
+    if not abcedaris_cursor or "abc_list" not in abcedaris_cursor:
+         return {"error": "No s'ha trobat l'element"}
+    
+    ## todo
+    # "number": 1,
+    # "number_bar": 1,
+    # "abc_dos_id": 1, 
+    abc_lists = await db.abc_list.find_one({
+        "abc_id" : payload.id_abc,
+        "courses": payload.coursesId,
+        "palabras" : payload.palabras
+    })
+
+    
+    abc_list = serializes(abc_lists)
+   
+    return {"abc_list" : abc_list}

@@ -4,7 +4,8 @@
         "name": "Paraula d’una sola síl·laba",
         "courses": "ca",
         "url_text" : "special",
-        "title_name" : "/lesson/monosillabs",
+        "title_name" : "/lesson",
+        "palabras" : "monosillabs", 
         "abc_list" : [
             {
                 "abc_id": 0,
@@ -57,7 +58,8 @@
         "name": "Un bisíl·lab és una paraula que té dues síl·labes",
         "courses": "ca",
         "url_text" : "special",
-        "title_name" : "/lesson/bisillabs",
+        "title_name" : "/lesson",
+        "palabras" : "bisillabs",
         "abc_list" : [
             {
                 "abc_id": 0,
@@ -109,7 +111,8 @@
         "name": "Un trisíl·lab és una paraula que té tres síl·labes",
         "courses": "ca",
         "url_text" : "danger",
-        "title_name" : "/lesson/trisilabs",
+        "title_name" : "/lesson",
+        "palabras" : "trisilabs",
         "abc_list" : [
             {
                 "abc_id": 0,
@@ -117,5 +120,37 @@
             }
         ]
     }
-    ]
+    
+   ],
+   "abc_list" : [
+        {
+            "abc_id" : 0,
+            "courses": "ca",
+            "palabras" : "monosillabs",
+            "abc_list" : [
+                {
+                    "number": 1,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "sol",
+                    "voice_mp3": "/mp3/ca/sol.mp3",
+                    "vocals_images": "/images/sun.svg"
+                },{
+                    "number": 2,
+                    "number_bar": 1,
+                    "lletres": "ou",
+                    "abc_dos_id": 1,
+                    "voice_mp3": "/mp3/ca/ou.mp3",
+                    "vocals_images": "/images/egg.svg"
+                },{
+                    "number": 3,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "ou",
+                    "voice_mp3": "/mp3/ca/ou.mp3",
+                    "vocals_images": "/images/egg.svg"
+                }
+            ]
+        }
+   ]
 }

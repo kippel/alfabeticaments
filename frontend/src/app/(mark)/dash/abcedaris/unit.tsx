@@ -22,15 +22,8 @@ export const Unit = ({
         danger: "bg-red-700 text-white",
         info: "bg-blue-700 text-white",
     };
-
-    
     
     const containerClass = `w-full rounded-xl p-4 flex items-center justify-between ${styleMap[url_text]}`;
-
-     
-
-    
-
 
     return (
         <div className={containerClass}>

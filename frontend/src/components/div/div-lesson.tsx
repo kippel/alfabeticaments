@@ -15,6 +15,20 @@ export const DivLesson = ({ text, children }: Props) => {
 };
 
 
+export type PropsUn = {
+  children: React.ReactNode;
+};
+
+
+export const DivUnLesson = ({ children }: PropsUn) => {
+    return (
+        <div className="h-full max-w-[912px] px-5 p-5 mx-auto">
+            { children }
+        </div>
+    )
+};
+
+
 
 export type DivProps = {
   children?: React.ReactNode;
