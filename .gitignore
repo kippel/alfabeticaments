@@ -12,7 +12,7 @@ backend/app/seed/__pycache__/*
 
 docker-compose.yml
 
-
+frontend/public/mp3/*
 
 
 # dependencies

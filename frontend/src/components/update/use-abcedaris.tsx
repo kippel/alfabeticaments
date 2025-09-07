@@ -89,7 +89,7 @@ type AbcedListType = {
 };
 
 export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
-  const [abcedlist, setAbcedList] = useState<AbcedListType | null>(null);
+  const [abcedlist, setAbcedList] = useState<AbcedType[]>([]);
   const { data: session } = useAuth();
   const { courses } = useCourses();
 
@@ -114,7 +114,7 @@ export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
           signal: controller.signal,
         }
       );
-      setAbcedList(res.data); // 👈 guardamos todo el objeto
+      setAbcedList(res.data.abc_list); // 👈 guardamos todo el objeto
     }
 
     fetchAbecedList();

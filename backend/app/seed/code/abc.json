@@ -132,16 +132,16 @@
                     "number": 1,
                     "number_bar": 1,
                     "abc_dos_id": 1,
-                    "lletres": "sol",
-                    "voice_mp3": "/mp3/ca/sol.mp3",
-                    "vocals_images": "/images/sun.svg"
+                    "lletres": "pa",
+                    "voice_mp3": "/mp3/ca/pa.mp3",
+                    "vocals_images": "/images/bread.svg"
                 },{
                     "number": 2,
                     "number_bar": 1,
-                    "lletres": "ou",
+                    "lletres": "sol",
                     "abc_dos_id": 1,
-                    "voice_mp3": "/mp3/ca/ou.mp3",
-                    "vocals_images": "/images/egg.svg"
+                    "voice_mp3": "/mp3/ca/sol.mp3",
+                    "vocals_images": "/images/sun.svg"
                 },{
                     "number": 3,
                     "number_bar": 1,
@@ -149,6 +149,27 @@
                     "lletres": "ou",
                     "voice_mp3": "/mp3/ca/ou.mp3",
                     "vocals_images": "/images/egg.svg"
+                },{
+                    "number": 4,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "col",
+                    "voice_mp3": "/mp3/ca/col.mp3",
+                    "vocals_images": "/images/cabbage.svg"
+                },{
+                    "number": 5,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "ull",
+                    "voice_mp3": "/mp3/ca/ull.mp3",
+                    "vocals_images": "/images/eye.svg"
+                },{
+                    "number": 6,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "dau",
+                    "voice_mp3": "/mp3/ca/dau.mp3",
+                    "vocals_images": "/images/dice.svg"
                 }
             ]
         }
