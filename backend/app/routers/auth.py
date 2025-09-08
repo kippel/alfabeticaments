@@ -18,7 +18,7 @@ router = APIRouter(prefix="/auth", tags=["auth"])
 
 SECRET_KEY = os.getenv("AUTH_SECRET_KEY")
 ALGORITHM = os.getenv("AUTH_ALGORITHM")
-ACCESS_TOKEN_EXPIRE_MINUTES = 160
+ACCESS_TOKEN_EXPIRE_MINUTES = 200
 
 # 🔹 Autenticació usuari
 async def authenticate_user(username: str, password: str, db):
@@ -103,7 +103,6 @@ async def login_for_access_token(
     token = create_access_token(
         username=user["username"],
         user_id=str(user["_id"]),
-        expires_delta=timedelta(minutes=30),
     )
 
     user_data = {
