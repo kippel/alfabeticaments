@@ -133,7 +133,7 @@
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "pa",
-                    "voice_mp3": "/mp3/ca/pa.mp3",
+                    "voice_mp3": "/mp3/ca/pa.wav",
                     "vocals_images": "/images/bread.svg"
                 },{
                     "number": 2,
@@ -172,6 +172,55 @@
                     "vocals_images": "/images/dice.svg"
                 }
             ]
+        },{
+            "abc_id" : 1,
+            "courses": "ca",
+            "palabras" : "monosillabs",
+            "abc_list" : [
+                {
+                    "number": 1,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "vi",
+                    "voice_mp3": "/mp3/ca/vi.mp3",
+                    "vocals_images": "/images/wine.svg"
+                },{
+                    "number": 2,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "mà",
+                    "voice_mp3": "/mp3/ca/ma.mp3",
+                    "vocals_images": "/images/hand.svg"
+                },{
+                    "number": 3,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "sí",
+                    "voice_mp3": "/mp3/ca/si.mp3",
+                    "vocals_images": "/images/yes.svg"
+                },{
+                    "number": 4,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "os",
+                    "voice_mp3": "/mp3/ca/bone.mp3",
+                    "vocals_images": "/images/bone.svg"
+                },{
+                    "number": 5,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "un",
+                    "voice_mp3": "/mp3/ca/un.mp3",
+                    "vocals_images": "/images/one.svg"
+                },{
+                    "number": 6,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "lletres": "món",
+                    "voice_mp3": "/mp3/ca/mon.mp3",
+                    "vocals_images": "/images/world.svg"
+                }
+            ]           
         }
    ]
 }

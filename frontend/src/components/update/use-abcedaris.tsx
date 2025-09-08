@@ -72,7 +72,7 @@ type AbcedListProps = {
   palabras: string;
 };
 
-type AbcedType = {
+export type AbcedType = {
   number: number;
   number_bar: number;
   abc_dos_id: number;

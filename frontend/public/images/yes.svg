@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   fill="#000000"
+   version="1.1"
+   id="Layer_1"
+   width="800px"
+   height="800px"
+   viewBox="0 0 260 244"
+   enable-background="new 0 0 260 244"
+   xml:space="preserve"
+   sodipodi:docname="thumbs-up-up-yes-approve-svgrepo-com.svg"
+   inkscape:version="1.4.2 (ebf0e940d0, 2025-05-08)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"><defs
+   id="defs1"><inkscape:path-effect
+     effect="fillet_chamfer"
+     id="path-effect1"
+     is_visible="true"
+     lpeversion="1"
+     nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 | F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+     radius="0"
+     unit="px"
+     method="auto"
+     mode="F"
+     chamfer_steps="1"
+     flexible="false"
+     use_knot_distance="true"
+     apply_no_radius="true"
+     apply_with_radius="true"
+     only_selected="false"
+     hide_knots="false" /></defs><sodipodi:namedview
+   id="namedview1"
+   pagecolor="#ffffff"
+   bordercolor="#000000"
+   borderopacity="0.25"
+   inkscape:showpageshadow="2"
+   inkscape:pageopacity="0.0"
+   inkscape:pagecheckerboard="0"
+   inkscape:deskcolor="#d1d1d1"
+   showguides="false"
+   inkscape:zoom="0.70975843"
+   inkscape:cx="414.22544"
+   inkscape:cy="471.28711"
+   inkscape:window-width="1920"
+   inkscape:window-height="1011"
+   inkscape:window-x="0"
+   inkscape:window-y="32"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="Layer_1" />
+<path
+   d="m 258,118 v 96 c 0,14.333 -13.667,28 -28,28 h -84 c -17.439,0 -31.571,-2.152 -48,-8 -5.073,-1.806 -20,-8 -20,-8 V 114 C 117.55083,84.636568 141.10394,58.472679 144.036,36.433 L 150,2 h 12 c 13.294,0 22.657,10.607 22.657,23.902 v 7.477 c 0,17.065 -1.028,34.115 -3.078,51.057 L 180.906,90 H 230 c 14.333,0 28,13.667 28,28 z M 2,238 H 62 V 102 H 2 Z"
+   id="path1"
+   style="fill:#ffe6d5;stroke:#808000;stroke-width:2.6;stroke-dasharray:none"
+   sodipodi:nodetypes="sssscccccsssccssccccc"
+   inkscape:path-effect="#path-effect1"
+   inkscape:original-d="m 258,118 v 96 c 0,14.333 -13.667,28 -28,28 h -84 c -17.439,0 -31.571,-2.152 -48,-8 -5.073,-1.806 -20,-8 -20,-8 V 114 C 117.55083,84.636568 141.10394,58.472679 144.036,36.433 L 150,2 h 12 c 13.294,0 22.657,10.607 22.657,23.902 v 7.477 c 0,17.065 -1.028,34.115 -3.078,51.057 L 180.906,90 H 230 c 14.333,0 28,13.667 28,28 z M 2,238 H 62 V 102 H 2 Z" />
+</svg>
