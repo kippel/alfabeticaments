@@ -9,46 +9,59 @@
         "abc_list" : [
             {
                 "abc_id": 0,
-                "title": "Monosíl.labs 1"
+                "title": "Monosíl.labs 1",
+                "abc_list" : 1
             },
             {
                 "abc_id": 1,
-                "title": "Monosíl.labs 2"
+                "title": "Monosíl.labs 2",
+                "abc_list" : 1
             },
             {
                 "abc_id": 2,
-                "title": "Monosíl.labs 3"
+                "title": "Monosíl.labs 3",
+                "abc_list" : 1
             },
             {
                 "abc_id": 3,
-                "title": "Monosíl.labs 4"
+                "title": "Monosíl.labs 4",
+                "abc_list" : 1
             },{
                 "abc_id": 4,
-                "title": "Monosíl.labs 5"
+                "title": "Monosíl.labs 5",
+                "abc_list" : 1
             },{
                 "abc_id": 5,
-                "title": "Monosíl.labs 6"
+                "title": "Monosíl.labs 6",
+                "abc_list" : 1
             },{
                 "abc_id": 6,
-                "title": "Monosíl.labs 7"
+                "title": "Monosíl.labs 7",
+                "abc_list" : 1
             },{
                 "abc_id": 7,
-                "title": "Monosíl.labs 8"
+                "title": "Monosíl.labs 8",
+                "abc_list" : 1
             },{
                 "abc_id": 8,
-                "title": "Monosíl.labs 9"
+                "title": "Monosíl.labs 9",
+                "abc_list" : 1
             },{
                 "abc_id": 9,
-                "title": "Monosíl.labs 10"
+                "title": "Monosíl.labs 10",
+                "abc_list" : 1
             },{
                 "abc_id": 10,
-                "title": "Monosíl.labs 11"
+                "title": "Monosíl.labs 11",
+                "abc_list" : 1
             },{
                 "abc_id": 11,
-                "title": "Monosíl.labs 12"
+                "title": "Monosíl.labs 12",
+                "abc_list" : 1
             },{
                 "abc_id": 12,
-                "title": "Monosíl.labs 13"
+                "title": "Monosíl.labs 13",
+                "abc_list" : 1
             }
 
         ]
@@ -63,46 +76,59 @@
         "abc_list" : [
             {
                 "abc_id": 0,
-                "title": "Bisíl·labs 1"
+                "title": "Bisíl·labs 1",
+                "abc_list" : 1
             },
             {
                 "abc_id": 1,
-                "title": "Bisíl·labs 2"
+                "title": "Bisíl·labs 2",
+                "abc_list" : 1
             },
             {
                 "abc_id": 2,
-                "title": "Bisíl·labs 3"
+                "title": "Bisíl·labs 3",
+                "abc_list" : 1
             },
             {
                 "abc_id": 3,
-                "title": "Bisíl·labs 4"
+                "title": "Bisíl·labs 4",
+                "abc_list" : 1
             },{
                 "abc_id": 4,
-                "title": "Bisíl·labs 5"
+                "title": "Bisíl·labs 5",
+                "abc_list" : 1
             },{
                 "abc_id": 5,
-                "title": "Bisíl·labs 6"
+                "title": "Bisíl·labs 6",
+                "abc_list" : 1
             },{
                 "abc_id": 6,
-                "title": "Bisíl·labs 7"
+                "title": "Bisíl·labs 7",
+                "abc_list" : 1
             },{
                 "abc_id": 7,
-                "title": "Bisíl·labs 8"
+                "title": "Bisíl·labs 8",
+                "abc_list" : 1
             },{
                 "abc_id": 8,
-                "title": "Bisíl·labs 9"
+                "title": "Bisíl·labs 9",
+                "abc_list" : 1
             },{
                 "abc_id": 9,
-                "title": "Bisíl·labs 10"
+                "title": "Bisíl·labs 10",
+                "abc_list" : 1
             },{
                 "abc_id": 10,
-                "title": "Bisíl·labs 11"
+                "title": "Bisíl·labs 11",
+                "abc_list" : 1
             },{
                 "abc_id": 11,
-                "title": "Bisíl·labs 12"
+                "title": "Bisíl·labs 12",
+                "abc_list" : 1
             },{
                 "abc_id": 12,
-                "title": "Bisíl·labs 13"
+                "title": "Bisíl·labs 13",
+                "abc_list" : 1
             }
         ]
     },
@@ -116,7 +142,8 @@
         "abc_list" : [
             {
                 "abc_id": 0,
-                "title": "Trisílabs 1"
+                "title": "Trisílabs 1",
+                "abc_list" : 1
             }
         ]
     }
@@ -134,43 +161,61 @@
                     "abc_dos_id": 1,
                     "lletres": "pa",
                     "voice_mp3": "/mp3/ca/pa.wav",
-                    "vocals_images": "/images/bread.svg"
+                    "vocals_images": "/images/bread.svg",
+                    "abc_list" : 1
                 },{
                     "number": 2,
                     "number_bar": 1,
                     "lletres": "sol",
                     "abc_dos_id": 1,
                     "voice_mp3": "/mp3/ca/sol.mp3",
-                    "vocals_images": "/images/sun.svg"
+                    "vocals_images": "/images/sun.svg",
+                    "abc_list" : 1
                 },{
                     "number": 3,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "ou",
                     "voice_mp3": "/mp3/ca/ou.mp3",
-                    "vocals_images": "/images/egg.svg"
+                    "vocals_images": "/images/egg.svg",
+                    "abc_list" : 1
                 },{
                     "number": 4,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "col",
                     "voice_mp3": "/mp3/ca/col.mp3",
-                    "vocals_images": "/images/cabbage.svg"
+                    "vocals_images": "/images/cabbage.svg",
+                    "abc_list" : 1
                 },{
                     "number": 5,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "ull",
                     "voice_mp3": "/mp3/ca/ull.mp3",
-                    "vocals_images": "/images/eye.svg"
+                    "vocals_images": "/images/eye.svg",
+                    "abc_list" : 1
                 },{
                     "number": 6,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "dau",
                     "voice_mp3": "/mp3/ca/dau.mp3",
-                    "vocals_images": "/images/dice.svg"
+                    "vocals_images": "/images/dice.svg",
+                    "abc_list" : 1
+                },{
+                    "number": 7,
+                    "number_bar": 1,
+                    "abc_dos_id": 1,
+                    "abc_list" : 2,
+                    "world" :[
+                        {"id" : 1, "world" : "pa", "bool" : true },
+                        {"id" : 2, "world" : "nu", "bool" : false}],
+                    "voice_mp3": "/mp3/ca/sol.mp3",
+                    "vocals_images": "/images/sun.svg",
+                    "lletres": "pa"
                 }
+
             ]
         },{
             "abc_id" : 1,
@@ -183,42 +228,48 @@
                     "abc_dos_id": 1,
                     "lletres": "vi",
                     "voice_mp3": "/mp3/ca/vi.mp3",
-                    "vocals_images": "/images/wine.svg"
+                    "vocals_images": "/images/wine.svg",
+                    "abc_list" : 1
                 },{
                     "number": 2,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "mà",
                     "voice_mp3": "/mp3/ca/ma.mp3",
-                    "vocals_images": "/images/hand.svg"
+                    "vocals_images": "/images/hand.svg",
+                    "abc_list" : 1
                 },{
                     "number": 3,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "sí",
                     "voice_mp3": "/mp3/ca/si.mp3",
-                    "vocals_images": "/images/yes.svg"
+                    "vocals_images": "/images/yes.svg",
+                    "abc_list" : 1
                 },{
                     "number": 4,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "os",
                     "voice_mp3": "/mp3/ca/bone.mp3",
-                    "vocals_images": "/images/bone.svg"
+                    "vocals_images": "/images/bone.svg",
+                    "abc_list" : 1
                 },{
                     "number": 5,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "un",
                     "voice_mp3": "/mp3/ca/un.mp3",
-                    "vocals_images": "/images/one.svg"
+                    "vocals_images": "/images/one.svg",
+                    "abc_list" : 1
                 },{
                     "number": 6,
                     "number_bar": 1,
                     "abc_dos_id": 1,
                     "lletres": "món",
                     "voice_mp3": "/mp3/ca/mon.mp3",
-                    "vocals_images": "/images/world.svg"
+                    "vocals_images": "/images/world.svg",
+                    "abc_list" : 1
                 }
             ]           
         }
