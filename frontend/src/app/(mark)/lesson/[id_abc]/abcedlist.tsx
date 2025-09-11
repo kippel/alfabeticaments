@@ -68,7 +68,8 @@ export const AbcedListPage = ({ id_abc, palabras}: Props) => {
             <div className="flex-1">
             <div className="h-full flex items-center justify-center">
                 <div className="lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col gap-y-12">
-                {currentPost && (
+                {currentPost && currentPost.abc_list === 1 && (
+                   
                    <AbcDosBar
                         number={currentPost.number}
                         number_bar={currentPost.number_bar}
@@ -77,7 +78,13 @@ export const AbcedListPage = ({ id_abc, palabras}: Props) => {
                         voice_mp3={currentPost.voice_mp3}
                         vocals_images={currentPost.vocals_images}
                     />
-                   )}
+                   )
+                }
+
+                {currentPost && currentPost.abc_list === 2 && (
+                    <>foo</>
+                )  
+                }
                 </div>
                 </div>
             </div>

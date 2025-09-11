@@ -14,9 +14,8 @@ async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRe
                         
     abcedaris_cursor = db.abcedaris_abc.find(
         {
-            "courses": payload.coursesId,
+          "abc_courses": payload.abc_courses,
           "user_id": str(user["id"])
-          
         }
     )
 
@@ -34,9 +33,9 @@ async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcL
     
     abcedaris_cursor = await db.abcedaris_abc.find_one(
         {
-            "courses": payload.coursesId,
-            "palabras": payload.palabras,
-            "abc_list.abc_id": payload.id_abc,
+            "abc_courses": payload.abcedaris_courses,
+            "abc_palabras": payload.abcedaris_palabras,
+            "abc_list.abc_id": payload.abcedaris_list,
             "user_id": user["id"]
         },
         {
@@ -47,14 +46,26 @@ async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcL
     if not abcedaris_cursor or "abc_list" not in abcedaris_cursor:
          return {"error": "No s'ha trobat l'element"}
     
-    abc_item = abcedaris_cursor["abc_list"][0]
-    print(abc_item['abc_list'])
-    #print(abc_item)
+
+    #print(abcedaris_cursor)
+
+    abc_list = serializes(abcedaris_cursor)
+    
+    abc_item = abc_list["abc_list"][0]
+
+    ''''
+    "abcedaris_id" : 0,                       # abcedaris_list
+    "abcedaris_courses": "ca",                # abcedaris_courses
+    "abcedaris_palabras" : "monosillabs",     # abcedaris_palabras
+    
+    
+    '''
+    
     abc_lists = await db.abc_list.find_one(
         {
-            "abc_id": payload.id_abc,
-            "courses": payload.coursesId,
-            "palabras": payload.palabras,
+            "abcedaris_id": payload.abcedaris_list,
+            "abcedaris_courses": payload.abcedaris_courses,
+            "abcedaris_palabras": payload.abcedaris_palabras,
             "user_id": user["id"]
             
         }
@@ -62,7 +73,8 @@ async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcL
     
     abc_list = serializes(abc_lists)
 
-    red = [e for e in abc_list['abc_list'] if e['abc_list'] == abc_item['abc_list']]
+    red = [e for e in abc_list['abcedaris_list'] if e['abcedaris_list_id'] == abc_item['abc_lists']]
+    #print(abc_list)
     
     return {"abc_list" : red}
 

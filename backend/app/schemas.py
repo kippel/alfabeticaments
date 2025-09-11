@@ -45,10 +45,10 @@ class CoursesRequest(BaseModel):
 # abc
 
 class AbcRequest(BaseModel):
-    coursesId: str
+    abc_courses: str
 
 
 class AbcListRequest(BaseModel):
-    coursesId: str
-    id_abc: int
-    palabras: str
+    abcedaris_courses: str
+    abcedaris_list: int
+    abcedaris_palabras: str

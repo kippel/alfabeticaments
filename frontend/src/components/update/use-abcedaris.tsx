@@ -79,6 +79,7 @@ export type AbcedType = {
   lletres: string;
   voice_mp3: string;
   vocals_images: string;
+  abc_list: number;
 };
 
 type AbcedListType = {
@@ -119,6 +120,6 @@ export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
 
     fetchAbecedList();
   }, [session?.accessToken, courses, id_abc, palabras]);
-
+  console.log(abcedlist)
   return { abcedlist };
 };
