@@ -211,12 +211,12 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_list_id" : 2,
-                    "abcedaris_world" :[
-                        {"abcedaris_id" : 1, "abcedaris_world" : "pa", "abcedaris_bool" : true },
-                        {"abcedaris_id" : 2, "abcedaris_world" : "nu", "abcedaris_bool" : false}],
                     "abcedaris_voice_mp3": "/mp3/ca/sol.mp3",
                     "abcedaris_vocals_images": "/images/sun.svg",
-                    "abcedaris_lletres": "pa"
+                    "abcedaris_lletres": "pa",
+                    "abcedaris_world" :[
+                        {"abcedaris_id" : 1, "abcedaris_world" : "pa", "abcedaris_bool" : true },
+                        {"abcedaris_id" : 2, "abcedaris_world" : "nu", "abcedaris_bool" : false}]
                 }
 
             ]

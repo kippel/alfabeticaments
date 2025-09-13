@@ -5,7 +5,8 @@ import { useAbcedList, AbcedType } from "@/components/update/use-abcedaris"
 import { Header } from '@/components/lessons/header';
 import { Footer } from '@/components/lessons/footer';
 
-import { AbcDosBar } from './AbcDosBar';
+import { AbcDosBar } from '@/components/abc/AbcDosBar';
+import { AbcDragDrop } from '@/components/abc/DragDrop';
 
 import { useRouter } from "next/navigation";
 
@@ -85,7 +86,7 @@ export const AbcedListPage = ({ abcedaris_id, abcedaris_palabras}: Props) => {
                 }
 
                 {currentPost && currentPost.abcedaris_list_id === 2 && (
-                    <>foo</>
+                    <AbcDragDrop />
                 )  
                 }
                 </div>

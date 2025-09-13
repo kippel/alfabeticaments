@@ -2,6 +2,11 @@
 
 # docker-compose.yml
 
+"abcedaris_world" :[
+                        {"abcedaris_id" : 1, "abcedaris_world" : "pa", "abcedaris_bool" : true },
+                        {"abcedaris_id" : 2, "abcedaris_world" : "nu", "abcedaris_bool" : false}],
+
+
 ```
 version: "3.9"
 services:

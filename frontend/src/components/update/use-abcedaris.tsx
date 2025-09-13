@@ -113,17 +113,14 @@ export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListP
   const [abcedlist, setAbcedList] = useState<AbcedType[]>([]);
   const { data: session } = useAuth();
   const { courses } = useCourses();
-  console.log(abcedaris_list)
-  console.log("qqqqqqqqqq")
+  
   useEffect(() => {
     const controller = new AbortController();
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
     if (!session?.accessToken || !backendUrl) return;
 
     async function fetchAbecedList() {
-      console.log(courses)
-      console.log(abcedaris_list)
-      console.log(abcedaris_palabras)
+  
       const res = await axios.post(
         `${backendUrl}/abc/abcedaris_list`,
         {
@@ -141,6 +138,6 @@ export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListP
 
     fetchAbecedList();
   }, [session?.accessToken, courses, abcedaris_list, abcedaris_palabras]);
-  console.log(abcedlist)
+  
   return { abcedlist };
 };

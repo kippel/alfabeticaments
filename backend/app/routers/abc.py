@@ -76,7 +76,7 @@ async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcL
     red = [e for e in abc_list['abcedaris_list'] if e['abcedaris_list_id'] == abc_item['abc_lists']]
     #print(abc_list)
     
-    return {"abc_list" : red}
+    return {"abc_list" :abc_list['abcedaris_list']}
 
  
 
