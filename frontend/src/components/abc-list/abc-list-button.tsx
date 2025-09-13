@@ -3,15 +3,15 @@ import { ListButton } from "./list-button"
 
 type AbcListButtonProps = {
   abc_list: AbcListType[];
-  title_name: string;
-  palabras: string;
+  abc_title_name: string;
+  abc_palabras: string;
 };
 
 
 export const AbcListButton = ({ 
     abc_list,
-    title_name,
-    palabras
+    abc_title_name,
+    abc_palabras
 }: AbcListButtonProps) => {
 
     
@@ -21,10 +21,10 @@ export const AbcListButton = ({
                 <ListButton 
                   key={index}
                    abc_id={abc_list.abc_id} 
-                   title={abc_list.title}
-                   palabras={palabras}
-                   index={index} 
-                   href_abc={title_name}
+                   abc_title={abc_list.abc_title}
+                   abc_palabras={abc_palabras}
+                   abc_index={index} 
+                   abc_href_abc={abc_title_name}
 
                 />
                 

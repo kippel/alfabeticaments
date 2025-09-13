@@ -19,15 +19,15 @@ function AbcabcPage(){
                     <div key={index}>
                     <Unit 
                      
-                       title={abc.title}
-                       name={abc.name} 
-                       url_text={abc.url_text}
+                       abc_title={abc.abc_title}
+                       abc_name={abc.abc_name} 
+                       abc_url_text={abc.abc_url_text}
                     />
                     
                     <AbcListButton 
                         abc_list={abc.abc_list} 
-                        title_name={abc.title_name} 
-                        palabras={abc.palabras} />
+                        abc_title_name={abc.abc_title_name} 
+                        abc_palabras={abc.abc_palabras} />
                     </div>
                 ))
             }

@@ -4,20 +4,36 @@ import { useState, useEffect } from "react";
 import { useAuth } from "@/components/auth";
 import { useCourses } from "@/components/ProviderCourses";
 
+/*
+"abc_id": 0,
+"abc_title": "Monosíl.labs 1",
+"abc_lists" : 1
+*/
+
 export type AbcListType = {
   abc_id: number;
-  title: string;
-  palabras: string;
+  abc_title: string;
+  abc_lists: number;
 };
 
+/*
+"abc_title": "Monosíl.labs",
+"abc_name": "Paraula d’una sola síl·laba",
+"abc_courses": "ca",
+"abc_url_text" : "special",
+"abc_title_name" : "/lesson",
+"abc_palabras" : "monosillabs", 
+"abc_max_number": 2,
+*/
 export type AbcedarisProps = {
   _id: string;
-  title: string;
-  courses: string;
-  name: string;
-  url_text: string;
-  title_name: string;
-  
+  abc_title: string;
+  abc_courses: string;
+  abc_name: string;
+  abc_url_text: string;
+  abc_title_name: string;
+  abc_palabras: string;
+  abc_max_number: number;
   abc_list: AbcListType[];
 };
 
@@ -42,7 +58,7 @@ export const useAbcedaris = () => {
       try {
         const res = await axios.post<{ abcedaris: AbcedarisProps[] }>(
           `${backendUrl}/abc/abcedaris`,
-          { coursesId: courses },
+          { abc_courses: courses },
           {
             headers: { Authorization: `Bearer ${session.accessToken}` },
             signal: controller.signal,
@@ -66,34 +82,39 @@ export const useAbcedaris = () => {
   return { abcedaris, loading, error };
 };
 
-
-type AbcedListProps = {
+/*
   id_abc: number;
   palabras: string;
+*/
+
+type AbcedListProps = {
+  abcedaris_list: number;
+  abcedaris_palabras: string;
 };
 
 export type AbcedType = {
-  number: number;
-  number_bar: number;
-  abc_dos_id: number;
-  lletres: string;
-  voice_mp3: string;
-  vocals_images: string;
-  abc_list: number;
+  abcedaris_number: number;
+  abcedaris_number_bar: number;
+  abcedaris_dos_id: number;
+  abcedaris_lletres: string;
+  abcedaris_voice_mp3: string;
+  abcedaris_vocals_images: string;
+  abcedaris_list_id: number;
 };
 
 type AbcedListType = {
-  abc_id: number;
-  courses: string;
-  palabras: string;
-  abc_list: AbcedType[];
+  abcedaris_id : number;
+  abcedaris_courses: string;
+  abcedaris_palabras: string;
+  abcedaris_list: AbcedType[];
 };
 
-export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
+export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListProps) => {
   const [abcedlist, setAbcedList] = useState<AbcedType[]>([]);
   const { data: session } = useAuth();
   const { courses } = useCourses();
-
+  console.log(abcedaris_list)
+  console.log("qqqqqqqqqq")
   useEffect(() => {
     const controller = new AbortController();
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
@@ -101,14 +122,14 @@ export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
 
     async function fetchAbecedList() {
       console.log(courses)
-      console.log(id_abc)
-      console.log(palabras)
+      console.log(abcedaris_list)
+      console.log(abcedaris_palabras)
       const res = await axios.post(
-        `${backendUrl}/abc/abced_list`,
+        `${backendUrl}/abc/abcedaris_list`,
         {
-          coursesId: courses,
-          id_abc,
-          palabras,
+          abcedaris_courses: courses,
+          abcedaris_list: abcedaris_list,
+          abcedaris_palabras: abcedaris_palabras,
         },
         {
           headers: { Authorization: `Bearer ${session.accessToken}` },
@@ -119,7 +140,7 @@ export const useAbcedList = ({ id_abc, palabras }: AbcedListProps) => {
     }
 
     fetchAbecedList();
-  }, [session?.accessToken, courses, id_abc, palabras]);
+  }, [session?.accessToken, courses, abcedaris_list, abcedaris_palabras]);
   console.log(abcedlist)
   return { abcedlist };
 };

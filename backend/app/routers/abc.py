@@ -25,7 +25,7 @@ async def get_abcedaris(user: user_dependency, db: db_dependency, payload: AbcRe
 
 
 
-@router.post('/abced_list')
+@router.post('/abcedaris_list')
 async def get_abced_list(user: user_dependency, db: db_dependency, payload: AbcListRequest):
     '''
     monosillabs

@@ -1,14 +1,14 @@
 type Props =  {
-    index: number;
+    abc_index: number;
 }
 
 
 
 export const CycleIndex = ({
-   index 
+   abc_index 
 }: Props) => {
     const cycleLength = 8;
-    const cycleIndex = index % cycleLength;
+    const cycleIndex = abc_index % cycleLength;
 
     let indentationLevel;
 

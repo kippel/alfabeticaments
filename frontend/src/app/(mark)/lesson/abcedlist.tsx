@@ -10,11 +10,11 @@ import { AbcDosBar } from './AbcDosBar';
 import { useRouter } from "next/navigation";
 
 type Props = {
-    id_abc: number;
-    palabras: string;
+    abcedaris_id: number;
+    abcedaris_palabras: string;
 }
 
-export const AbcedListPage = ({ id_abc, palabras}: Props) => {
+export const AbcedListPage = ({ abcedaris_id, abcedaris_palabras}: Props) => {
 
 
     const [posts, setPosts] = useState<AbcedType[]>([]);
@@ -22,8 +22,11 @@ export const AbcedListPage = ({ id_abc, palabras}: Props) => {
     const [percentage, setPercentage] = useState(0);
     const [coute, setCoute] = useState<number>(0);
     const router = useRouter();
-
-    const {abcedlist} = useAbcedList({id_abc, palabras});
+    
+    const {abcedlist} = useAbcedList({
+        abcedaris_list : abcedaris_id,
+        abcedaris_palabras: abcedaris_palabras
+    });
 
     useEffect(() => {
         setPosts(abcedlist);
@@ -68,20 +71,20 @@ export const AbcedListPage = ({ id_abc, palabras}: Props) => {
             <div className="flex-1">
             <div className="h-full flex items-center justify-center">
                 <div className="lg:min-h-[350px] lg:w-[600px] w-full px-6 lg:px-0 flex flex-col gap-y-12">
-                {currentPost && currentPost.abc_list === 1 && (
+                {currentPost && currentPost.abcedaris_list_id === 1 && (
                    
                    <AbcDosBar
-                        number={currentPost.number}
-                        number_bar={currentPost.number_bar}
-                        abc_dos_id={currentPost.abc_dos_id}
-                        lletres={currentPost.lletres}
-                        voice_mp3={currentPost.voice_mp3}
-                        vocals_images={currentPost.vocals_images}
+                        abcedaris_number={currentPost.abcedaris_number}
+                        abcedaris_number_bar={currentPost.abcedaris_number_bar}
+                        abcedaris_dos_id={currentPost.abcedaris_dos_id}
+                        abcedaris_lletres={currentPost.abcedaris_lletres}
+                        abcedaris_voice_mp3={currentPost.abcedaris_voice_mp3}
+                        abcedaris_vocals_images={currentPost.abcedaris_vocals_images}
                     />
                    )
                 }
 
-                {currentPost && currentPost.abc_list === 2 && (
+                {currentPost && currentPost.abcedaris_list_id === 2 && (
                     <>foo</>
                 )  
                 }

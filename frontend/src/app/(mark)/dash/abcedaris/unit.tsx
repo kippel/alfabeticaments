@@ -3,18 +3,18 @@ import { NotebookText } from "lucide-react";
 import Link from "next/link";
 
 type Props = {
-    title: string;
-    name: string; 
-    url_text: string;
+    abc_title: string;
+    abc_name: string; 
+    abc_url_text: string;
 }
 
 
 
 
 export const Unit = ({ 
-    title,
-    name,
-    url_text
+    abc_title,
+    abc_name,
+    abc_url_text
 }: Props) => {
 
     const styleMap: Record<string, string> = {
@@ -23,14 +23,14 @@ export const Unit = ({
         info: "bg-blue-700 text-white",
     };
     
-    const containerClass = `w-full rounded-xl p-4 flex items-center justify-between ${styleMap[url_text]}`;
+    const containerClass = `w-full rounded-xl p-4 flex items-center justify-between ${styleMap[abc_url_text]}`;
 
     return (
         <div className={containerClass}>
             <div className="space-y-2.5">
-                <h1 className="text-2xl font-bold">{title}</h1>
+                <h1 className="text-2xl font-bold">{abc_title}</h1>
                 <p className="text-lg">
-                    {name}
+                    {abc_name}
                 </p>
             </div>
            

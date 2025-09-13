@@ -13,27 +13,27 @@ import { CycleIndex } from "./cycleIndex";
 
 type Props = {
     abc_id: number;
-    title: string;
-    index: number;
-    href_abc: string;
-    palabras: string;
+    abc_title: string;
+    abc_index: number;
+    abc_href_abc: string;
+    abc_palabras: string;
 }
 
 
 
 export const ListButton = ({
     abc_id,
-    title,
-    index,
-    href_abc,
-    palabras
+    abc_title,
+    abc_index,
+    abc_href_abc,
+    abc_palabras
 }: Props) => {
 
     const { theme, setTheme } = useTheme();
     
-    const { rightPosition } = CycleIndex({ index });
+    const { rightPosition } = CycleIndex({ abc_index });
     
-    const href = `${href_abc}/${abc_id}?palabras=${palabras}`    //`/lesson/${abc_id}`
+    const href = `${abc_href_abc}?abcedaris_id=${abc_id}&abc_palabras=${abc_palabras}`    //`/lesson/${abc_id}`
     const percentage = 20;
       
     return (
