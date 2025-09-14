@@ -211,12 +211,13 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_list_id" : 2,
-                    "abcedaris_voice_mp3": "/mp3/ca/sol.mp3",
-                    "abcedaris_vocals_images": "/images/sun.svg",
+                    "abcedaris_voice_mp3": "/mp3/ca/pa.wav",
+                    "abcedaris_vocals_images": "/images/bread.svg",
                     "abcedaris_lletres": "pa",
                     "abcedaris_world" :[
-                        {"abcedaris_id" : 1, "abcedaris_world" : "pa", "abcedaris_bool" : true },
-                        {"abcedaris_id" : 2, "abcedaris_world" : "nu", "abcedaris_bool" : false}]
+                        {"abcedaris_idle" : 1, "abcedaris_world" : "pa" },
+                        {"abcedaris_idle" : 2, "abcedaris_world" : "pot"}],
+                    "abcedaris_world_id" : [{"abcedaris_idle_red" : 1, "abcedaris_world_red" : "pa" }]
                 }
 
             ]

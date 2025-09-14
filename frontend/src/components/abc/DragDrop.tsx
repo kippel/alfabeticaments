@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { DndContext, useDraggable, useDroppable } from "@dnd-kit/core";
 import { Button } from "@/components/ui/button";
+import { AbcedarisWorldIdType, AbcedarisWorldType } from "@/components/update/use-abcedaris"
 
 type Word = {
   id: number;
@@ -71,10 +72,17 @@ function BlankDropArea({
   );
 }
 
-export const AbcDragDrop = () => {
+export const AbcDragDrop = ({
+  abcedaris_voice_mp3,
+  abcedaris_world,
+  abcedaris_world_id}: {
+  abcedaris_voice_mp3: string;
+  abcedaris_world : AbcedarisWorldType[],
+  abcedaris_world_id: AbcedarisWorldIdType[]
+}) => {
   const [droppedWord, setDroppedWord] = useState<Word | null>(null);
   const [checked, setChecked] = useState(false);
-
+  
   const handleDragEnd = (event: any) => {
     if (event.over && event.active.data.current) {
       setDroppedWord(event.active.data.current as Word);
@@ -121,7 +129,3 @@ export const AbcDragDrop = () => {
     </DndContext>
   );
 }
-
-
-
-

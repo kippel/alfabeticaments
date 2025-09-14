@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { useAbcedList, AbcedType } from "@/components/update/use-abcedaris"
 import { Header } from '@/components/lessons/header';
 import { Footer } from '@/components/lessons/footer';
+import { FooterDragDrop } from '@/components/lessons/footer-drag-drop';
 
 import { AbcDosBar } from '@/components/abc/AbcDosBar';
 import { AbcDragDrop } from '@/components/abc/DragDrop';
@@ -57,6 +58,7 @@ export const AbcedListPage = ({ abcedaris_id, abcedaris_palabras}: Props) => {
     }
 
     const currentPost = posts[coute];
+    
 
     useEffect(() => {
         if (posts.length > 0) {
@@ -65,6 +67,8 @@ export const AbcedListPage = ({ abcedaris_id, abcedaris_palabras}: Props) => {
         }
     }, [coute, posts.length]);
 
+
+    console.log(currentPost)
 
     return (
         <>
@@ -86,13 +90,23 @@ export const AbcedListPage = ({ abcedaris_id, abcedaris_palabras}: Props) => {
                 }
 
                 {currentPost && currentPost.abcedaris_list_id === 2 && (
-                    <AbcDragDrop />
-                )  
+                    <AbcDragDrop 
+                      abcedaris_voice_mp3={currentPost.abcedaris_voice_mp3}
+                      abcedaris_world={currentPost.abcedaris_world}
+                      abcedaris_world_id={currentPost.abcedaris_world_id}
+                      />
+                    )  
                 }
                 </div>
                 </div>
             </div>
-            <Footer onCheck={handleCheck} />
+            {currentPost && currentPost.abcedaris_list_id === 1 && (
+                <Footer onCheck={handleCheck}  />
+            )}
+
+            {currentPost && currentPost.abcedaris_list_id === 2 && (
+                <FooterDragDrop  />
+            )}
         </>
 
 

@@ -85,27 +85,43 @@ export const useAbcedaris = () => {
 /*
   id_abc: number;
   palabras: string;
-*/
+
+abcedaris_id : number;
+  abcedaris_courses: string;
+  abcedaris_palabras: string;
+
+  */
 
 type AbcedListProps = {
   abcedaris_list: number;
   abcedaris_palabras: string;
 };
 
+export type AbcedarisWorldType = {
+  abcedaris_idle: number;
+  abcedaris_world: string;
+}
+
+export type AbcedarisWorldIdType = {
+  abcedaris_idle_red: number;
+  abcedaris_world_red: string;
+}
+
 export type AbcedType = {
   abcedaris_number: number;
   abcedaris_number_bar: number;
   abcedaris_dos_id: number;
-  abcedaris_lletres: string;
+  abcedaris_lletres?: string;
   abcedaris_voice_mp3: string;
   abcedaris_vocals_images: string;
   abcedaris_list_id: number;
+  abcedaris_world?: AbcedarisWorldType[];
+  abcedaris_world_id?: AbcedarisWorldIdType[];
+
 };
 
 type AbcedListType = {
-  abcedaris_id : number;
-  abcedaris_courses: string;
-  abcedaris_palabras: string;
+  
   abcedaris_list: AbcedType[];
 };
 
