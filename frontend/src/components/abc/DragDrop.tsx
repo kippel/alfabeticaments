@@ -16,7 +16,7 @@ const words: Word[] = [
   { id: 3, label: "red" },
 ];
 
-const correctAnswer = { id: 1, label: "po" };
+//const correctAnswer = { id: 1, label: "po" };
 
 function DraggableWord({ word }: { word: Word }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } =
@@ -83,6 +83,12 @@ export const AbcDragDrop = ({
   const [droppedWord, setDroppedWord] = useState<Word | null>(null);
   const [checked, setChecked] = useState(false);
   
+  const [correctAnswer] = useState<Word>(abcedaris_world_id[0]);
+
+
+
+  console.log(abcedaris_world)
+  console.log(abcedaris_world_id[0])
   const handleDragEnd = (event: any) => {
     if (event.over && event.active.data.current) {
       setDroppedWord(event.active.data.current as Word);
@@ -94,7 +100,7 @@ export const AbcDragDrop = ({
     setChecked(true);
   };
 
-  const isCorrect = droppedWord?.id === correctAnswer.id;
+  const isCorrect = droppedWord?.id === correctAnswer.abcedaris_idle_red;
 
   return (
     <DndContext onDragEnd={handleDragEnd}>

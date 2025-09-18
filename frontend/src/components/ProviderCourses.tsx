@@ -22,7 +22,7 @@ export const AppContext = createContext<AppContextType | undefined>(undefined);
 export default function ProviderCourses({ children }: Props) {
   const [courses, setCourses] = useState<CoursesType | null>(null);
   const { data: session} = useAuth();
-  console.log(session?.accessToken)
+ 
   useEffect(() => {
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
     if (!session?.accessToken) return;
