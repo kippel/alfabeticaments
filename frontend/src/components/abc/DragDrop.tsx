@@ -7,21 +7,24 @@ import { AbcedarisWorldIdType, AbcedarisWorldType } from "@/components/update/us
 
 type Word = {
   id: number;
-  label: string;
+  abcedaris_idle: number;
+  abcedaris_world: string;
+
 };
 
-const words: Word[] = [
-  { id: 1, label: "pa" },
-  { id: 2, label: "po" },
-  { id: 3, label: "red" },
-];
+type WordId = {
+  abcedaris_idle_red: number;
+  abcedaris_world_red: string;
+}
+
+
 
 //const correctAnswer = { id: 1, label: "po" };
-
+// {"abcedaris_idle" : 1, "abcedaris_world" : "pa" }
 function DraggableWord({ word }: { word: Word }) {
   const { attributes, listeners, setNodeRef, transform, isDragging } =
     useDraggable({
-      id: String(word.id),
+      id: String(word.abcedaris_idle),
       data: word,
     });
 
@@ -40,7 +43,7 @@ function DraggableWord({ word }: { word: Word }) {
       {...attributes}
       className="px-4 py-2 bg-blue-500 text-white rounded-xl cursor-move"
     >
-      {word.label}
+      {word.abcedaris_world}
     </div>
   );
 }
@@ -64,7 +67,7 @@ function BlankDropArea({
       }`}
     >
       {droppedWord ? (
-        <span className="font-semibold">{droppedWord.label}</span>
+        <span className="font-semibold">{droppedWord.abcedaris_world}</span>
       ) : (
         <span className="inline-block min-w-[40px]">&nbsp;</span>
       )}
@@ -80,10 +83,11 @@ export const AbcDragDrop = ({
   abcedaris_world : AbcedarisWorldType[],
   abcedaris_world_id: AbcedarisWorldIdType[]
 }) => {
-  const [droppedWord, setDroppedWord] = useState<Word | null>(null);
-  const [checked, setChecked] = useState(false);
   
-  const [correctAnswer] = useState<Word>(abcedaris_world_id[0]);
+  const [words] = useState<Word[]>(abcedaris_world);
+  const [checked, setChecked] = useState(false);
+  const [droppedWord, setDroppedWord] = useState<Word | null>(null);    
+  const [correctAnswer] = useState<WordId>(abcedaris_world_id[0]);
 
 
 
@@ -100,7 +104,7 @@ export const AbcDragDrop = ({
     setChecked(true);
   };
 
-  const isCorrect = droppedWord?.id === correctAnswer.abcedaris_idle_red;
+  const isCorrect = droppedWord?.abcedaris_idle === correctAnswer.abcedaris_idle_red;
 
   return (
     <DndContext onDragEnd={handleDragEnd}>
@@ -115,8 +119,8 @@ export const AbcDragDrop = ({
         </p>
 
         <div className="flex gap-4">
-          {words.map((word) => (
-            <DraggableWord key={word.id} word={word} />
+          {words.map((word, index) => (
+            <DraggableWord key={index} word={word} />
           ))}
         </div>
 
