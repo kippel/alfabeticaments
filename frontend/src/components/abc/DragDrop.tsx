@@ -4,6 +4,8 @@ import { useState } from "react";
 import { DndContext, useDraggable, useDroppable } from "@dnd-kit/core";
 import { Button } from "@/components/ui/button";
 import { AbcedarisWorldIdType, AbcedarisWorldType } from "@/components/update/use-abcedaris"
+import { Sounds } from '@/components/lletres/sound';
+
 
 type Word = {
   id: number;
@@ -89,10 +91,6 @@ export const AbcDragDrop = ({
   const [droppedWord, setDroppedWord] = useState<Word | null>(null);    
   const [correctAnswer] = useState<WordId>(abcedaris_world_id[0]);
 
-
-
-  console.log(abcedaris_world)
-  console.log(abcedaris_world_id[0])
   const handleDragEnd = (event: any) => {
     if (event.over && event.active.data.current) {
       setDroppedWord(event.active.data.current as Word);
@@ -107,7 +105,9 @@ export const AbcDragDrop = ({
   const isCorrect = droppedWord?.abcedaris_idle === correctAnswer.abcedaris_idle_red;
 
   return (
-    <DndContext onDragEnd={handleDragEnd}>
+    <>
+     
+      <DndContext onDragEnd={handleDragEnd}>
       <div className="p-6 max-w-lg mx-auto space-y-6">
        
        
@@ -115,9 +115,9 @@ export const AbcDragDrop = ({
         <p className="text-lg">
           
           <BlankDropArea droppedWord={droppedWord} onDropWord={setDroppedWord} />
-          
+              
         </p>
-
+        <Sounds voice={abcedaris_voice_mp3} />
         <div className="flex gap-4">
           {words.map((word, index) => (
             <DraggableWord key={index} word={word} />
@@ -137,5 +137,6 @@ export const AbcDragDrop = ({
         )}
       </div>
     </DndContext>
+    </>
   );
 }
