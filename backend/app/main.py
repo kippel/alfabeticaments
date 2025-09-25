@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database.database import db
 from app.database.models import Users
-from .routers import auth, courses, abc
+from .routers import auth, courses, abc, hora
 from app.lib import serializes
 
 app = FastAPI()
@@ -39,3 +39,4 @@ async def root():
 app.include_router(auth.router)
 app.include_router(courses.router)
 app.include_router(abc.router)
+app.include_router(hora.router)

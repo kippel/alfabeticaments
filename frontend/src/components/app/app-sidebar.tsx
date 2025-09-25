@@ -30,6 +30,9 @@ const data = {
         {
           title: "Abcedaris",
           url: "/dash/abcedaris",
+        },{
+          title: "Hora",
+          url: "/dash/hora",
         }
       ],
     },

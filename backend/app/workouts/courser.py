@@ -15,6 +15,16 @@ class UserRequest:
         }
 
 
+async def user_request_id_user(user: user_dependency, db: db_dependency):
+    n = UserRequestId(user, db)
+    courses = await n.courses()
+    data = n.courses_data(courses)
+    
+    return data
+
+
+
+
 class UserRequestId(UserRequest):
     async def courses(self):
         user_courses = await self.db["user_courses"].find_one({"user_id": self.user["id"]})

@@ -4,7 +4,7 @@
         "abc_name": "Paraula d’una sola síl·laba",
         "abc_courses": "ca",
         "abc_url_text" : "special",
-        "abc_title_name" : "/lesson",
+        "abc_title_name" : "/lesson/lesson",
         "abc_palabras" : "monosillabs", 
         "abc_max_number": 2,
         "abc_list" : [
@@ -72,7 +72,7 @@
         "abc_name": "Un bisíl·lab és una paraula que té dues síl·labes",
         "abc_courses": "ca",
         "abc_url_text" : "special",
-        "abc_title_name" : "/lesson",
+        "abc_title_name" : "/lesson/lesson",
         "abc_palabras" : "bisillabs",
         "abc_max_number": 2,
         "abc_list" : [
@@ -139,7 +139,7 @@
         "abc_name": "Un trisíl·lab és una paraula que té tres síl·labes",
         "abc_courses": "ca",
         "abc_url_text" : "danger",
-        "abc_title_name" : "/lesson",
+        "abc_title_name" : "/lesson/lesson",
         "abc_palabras" : "trisilabs",
         "abc_max_number": 2,
         "abc_list" : [

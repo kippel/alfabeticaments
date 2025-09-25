@@ -52,3 +52,13 @@ class AbcListRequest(BaseModel):
     abcedaris_courses: str
     abcedaris_list: int
     abcedaris_palabras: str
+
+########################################
+
+class HoraDosType(BaseModel):
+    hora_numbro_uns: int
+
+
+class HoraTresType(BaseModel):
+    hora_numbro_uns: int
+    hora_numbro_dos: int

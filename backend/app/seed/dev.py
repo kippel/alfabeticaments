@@ -2,7 +2,7 @@ from motor.motor_asyncio import AsyncIOMotorClient
 import os
 import asyncio
 from app.database.deps import bcrypt_context
-from .abcs import abcs, courser
+from .abcs import abcs, courser, hora
 
 async def seed_user(db):
     await db.users.delete_many({})
@@ -26,7 +26,9 @@ async def seed_db():
     user_id = await seed_user(db)
     
     await abcs(db, user_id)    
+    await hora(db, user_id)
     await courser(db)
+    
 
     print("Seed completat!")
     client.close()  # tancar la connexió
