@@ -62,4 +62,7 @@ async def get_hora_tres(user: user_dependency, db: db_dependency, payload: HoraT
 
     hora = await serializes_list(hora_dos)
 
+    
+
+
     return { "hora_tres" : hora}

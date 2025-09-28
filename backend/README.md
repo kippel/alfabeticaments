@@ -26,3 +26,6 @@ Hora digital	Expressió catalana
 2:45	Tres quarts de tres
 2:50	Tres quarts i cinc de tres
 2:55	Cinc minuts per a les tres
+
+
+3:00 3:05 3:10 3:15 3:20

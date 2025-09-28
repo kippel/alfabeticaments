@@ -30,6 +30,9 @@ async def seed_db():
     await courser(db)
     
 
+    
+
+
     print("Seed completat!")
     client.close()  # tancar la connexió
 

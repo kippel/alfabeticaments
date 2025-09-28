@@ -3,8 +3,16 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database.database import db
 from app.database.models import Users
-from .routers import auth, courses, abc, hora
+from .routers import auth, courses, abc, hora, tests
 from app.lib import serializes
+import logging
+
+logging.basicConfig(
+    level=logging.DEBUG,  # Mostra DEBUG, INFO, WARNING, ERROR i CRITICAL
+    format="%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+)
+
+
 
 app = FastAPI()
 
@@ -40,3 +48,4 @@ app.include_router(auth.router)
 app.include_router(courses.router)
 app.include_router(abc.router)
 app.include_router(hora.router)
+app.include_router(tests.router)

@@ -53,3 +53,5 @@ async def hora(db, user_id):
     await db.hora_uns.insert_many(data['hora_uns'])
     await db.hora_dos.insert_many(data['hora_dos'])
     await db.hora_tres.insert_many(data['hora_tres'])
+
+    
