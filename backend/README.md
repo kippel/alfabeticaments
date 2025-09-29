@@ -28,4 +28,3 @@ Hora digital	Expressió catalana
 2:55	Cinc minuts per a les tres
 
 
-3:00 3:05 3:10 3:15 3:20

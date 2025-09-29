@@ -8,6 +8,8 @@ backend/tests/__pycache__/*
 backend/app/database/__pycache__/*
 backend/app/seed/__pycache__/*
 
+backend/app/workouts/mp3/*
+
 .env
 
 docker-compose.yml
