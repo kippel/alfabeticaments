@@ -1,8 +1,7 @@
 import {getRequestConfig} from 'next-intl/server';
  
 export default getRequestConfig(async () => {
-  // Provide a static locale, fetch a user setting,
-  // read from `cookies()`, `headers()`, etc.
+  // Static for now, we'll change this later
   const locale = 'ca';
  
   return {

@@ -7,9 +7,9 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from '@/components/ui/button';
 import { ButtonLogin, ButtonUser, ButtonUsers } from "../button-login";
-import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-//import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 type Inputs = {
     username: string,
@@ -36,39 +36,36 @@ function LoginPage() {
 
     })
 
-    //const t = useTranslations('Login');
+    const t = useTranslations('Login');
 
     return (
         <div className="flex min-h-screen items-center justify-center">
 
             <ButtonLogin>
-                <ButtonUsers><p className="text-3xl">alfabeticament</p></ButtonUsers>
+                <ButtonUsers><p className="text-3xl">{t('alfabeticament')}</p></ButtonUsers>
 
                 <ButtonUser><Link href="/auth/register" className="underline text-sm">
-                    register
+                    {t('register')}
                 </Link></ButtonUser>
 
 
             </ButtonLogin>
-            <Card className="w-full max-w-sm">
-                <CardHeader>
-                    <CardTitle className="text-xl">title</CardTitle>
-                </CardHeader>
+            <Card className="w-full max-w-sm">                
                 <CardContent>
                     <form onSubmit={onSubmit} className="space-y-4">
                         <h1 className="text-slate-200 font-black text-4xl mb-4">
-                            Login
+                            {t('login')}
                         </h1>
                         {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
 
                         <label htmlFor="username" className="text-slate-400 mb-2 block text-lg">
-                            username
+                            {t('username')}
                         </label>
                         <input type="text"
                             {...register("username", {
                                 required: {
                                     value: true,
-                                    message: 'Namel is required'
+                                    message: t('username_required')
                                 }
                             })}
                             className="p-3 rounded block mb-2 bg-slate-800 text-slate-300 w-full" />
@@ -79,12 +76,12 @@ function LoginPage() {
                         }
 
                         <label htmlFor="password" className="text-slate-400 mb-2 block text-lg">
-                            Password
+                            {t('password')}
                         </label>
                         <input type="password" {...register("password", {
                             required: {
                                 value: true,
-                                message: 'Password is required'
+                                message: t('password_required')
                             }
                         })} className="p-3 rounded block mb-2 bg-slate-800 text-slate-300 w-full" />
                         {
@@ -92,7 +89,7 @@ function LoginPage() {
                                 <span className="text-red-300">{errors.password.message}</span>
                             )
                         }
-                        <Button variant="primary" className="w-full mt-2 rounded-lg">Login</Button>
+                        <Button variant="primary" className="w-full mt-2 rounded-lg">{t('login')}</Button>
 
                     </form>
 

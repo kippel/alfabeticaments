@@ -8,9 +8,7 @@ import Link from "next/link";
 import { ButtonLogin, ButtonUser, ButtonUsers } from "../button-login";
 import { Card, CardHeader, CardContent, CardTitle } from '@/components/ui/card'
 import { toast } from "react-hot-toast";
-
-
-//import { useTranslations } from 'next-intl';
+import { useTranslations } from 'next-intl';
 
 
 type Inputs = {
@@ -54,15 +52,15 @@ function RegisterPage() {
         }
     })
 
-    //const t = useTranslations('Register');
+    const t = useTranslations('Register');
 
     return (
         <div className="flex min-h-screen items-center justify-center">
             <ButtonLogin>
-                <ButtonUsers><p className="text-3xl">alfabeticament</p></ButtonUsers>
+                <ButtonUsers><p className="text-3xl">{t('alfabeticament')}</p></ButtonUsers>
 
                 <ButtonUser><Link href="/auth/login" className="underline text-sm">
-                    login
+                    {t('login')}
                 </Link>
             </ButtonUser>
 
@@ -76,17 +74,17 @@ function RegisterPage() {
                 <CardContent>
                     <form onSubmit={onSubmit} className="space-y-4">
                         <h1 className="text-slate-200 font-black text-4xl mb-4">
-                            Register
+                            {t('register')}
                         </h1>
                         {error && <div className="bg-red-500 text-white p-2 mb-2">{error}</div>}
                         <label htmlFor="name" className="text-slate-400 mb-2 block text-lg">
-                            Username
+                            {t('username')}
                         </label>
                         <input type="text"
                             {...register("username", {
                                 required: {
                                     value: true,
-                                    message: 'Username is required'
+                                    message: t('username_required')
                                 }
                             })}
                             className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full" />
@@ -97,12 +95,12 @@ function RegisterPage() {
                         }
 
                         <label htmlFor="password" className="text-slate-400 mb-2 block text-lg">
-                            Password
+                            {t('password')}
                         </label>
                         <input type="password" {...register("password", {
                             required: {
                                 value: true,
-                                message: 'Password is required'
+                                message: t('password_required')
                             }
                         })} className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full" />
                         {
@@ -111,12 +109,12 @@ function RegisterPage() {
                             )
                         }
                         <label htmlFor="confirmPassword" className="text-slate-400 mb-2 block text-lg">
-                            Confirm Password
+                            {t('confirm_password')}
                         </label>
                         <input type="password" {...register("confirmPassword", {
                             required: {
                                 value: true,
-                                message: 'Confirm Password is required'
+                                message: t('confirm_password_required')
                             }
                         })} className="p-3 rounded block mb-2 bg-slate-900 text-slate-300 w-full" />
                         {
@@ -125,7 +123,7 @@ function RegisterPage() {
                             )
                         }
 
-                        <button className="w-full bg-blue-500 text-white p-3 rounded-lg mt-2 ">Register</button>
+                        <button className="w-full bg-blue-500 text-white p-3 rounded-lg mt-2 ">{t('register')}</button>
                     </form>
                 </CardContent>
             </Card>
