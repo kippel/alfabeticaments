@@ -2,17 +2,14 @@
 
 # docker-compose.yml
 
-"abcedaris_world" :[
-                        {"abcedaris_id" : 1, "abcedaris_world" : "pa", "abcedaris_bool" : true },
-                        {"abcedaris_id" : 2, "abcedaris_world" : "nu", "abcedaris_bool" : false}],
-
-
 ```
 version: "3.9"
 services:
   backend:
     build: ./backend
     container_name: backend
+    env_file:
+      - .env
     ports:
       - "4000:4000"
     volumes:
@@ -38,12 +35,35 @@ volumes:
 
 ```
 
+## .env
 
+```
+AUTH_SECRET_KEY=your_secret_key_here
+AUTH_ALGORITHM=HS256
+API_URL=http://192.168.50.16:3000
+
+NEXT_PUBLIC_BACKEND_URL=http://192.168.50.16:4000
+```
+
+## frontend/.env
+
+```
+NEXTAUTH_URL=http://localhost:3000
+```
+## frontend/.env.local
+
+```
+NEXTAUTH_SECRET="our_secret_key_here"
+
+NEXT_PUBLIC_BACKEND_URL=http://192.168.50.16:4000
+```
+
+```
 docker build -t backend .
 docker run --rm backend pytest
 
 docker run --rm backend pytest tests/
-
+```
 
 ``` todo
 docker compose up --build
