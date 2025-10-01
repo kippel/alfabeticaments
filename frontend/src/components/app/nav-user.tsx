@@ -32,6 +32,7 @@ import {
 import { signOut } from "next-auth/react"
 import { useRouter } from "next/navigation";
 import { useSession } from 'next-auth/react';
+import Link from "next/link";
 
 
 export function NavUser() {
@@ -85,15 +86,18 @@ export function NavUser() {
             <DropdownMenuGroup>
               <DropdownMenuItem>
                  <Languages className="h-4 w-4" />
-                <button onClick={() => router.push('/dash/languages')}>Idiomas</button>
-                
+                  <Link href="/lesson/languages">
+                    Idiomas
+                  </Link>                
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />
-            <DropdownMenuItem>
-              <LogOut />
-              <button onClick={() => signOut({ callbackUrl: '/' })}>Logout</button>
-              
+            <DropdownMenuItem
+              onClick={() => signOut({ callbackUrl: "/" })}
+              className="flex items-center gap-2 cursor-pointer"
+            >
+              <LogOut className="h-4 w-4" />
+              Logout
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
