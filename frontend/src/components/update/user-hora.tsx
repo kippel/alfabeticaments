@@ -18,14 +18,15 @@ export const useHoraUns = () => {
     useEffect(() => {
         const controller = new AbortController();
         const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-        if (!session?.accessToken) return;
+        const accessToken = (session as any)?.accessToken as string | undefined;
+        if (!accessToken || !backendUrl) return;
 
         async function fetchAbecedaris() {
             const res = await axios.post<{ hora_uns: HoraUnsProps[] }>(
                 `${backendUrl}/hora/hora_uns`,
                 { },
                 {
-                    headers: { Authorization: `Bearer ${session.accessToken}` },
+                    headers: { Authorization: `Bearer ${accessToken}` },
                     signal: controller.signal,
                 }
             );
@@ -33,7 +34,7 @@ export const useHoraUns = () => {
         }
         fetchAbecedaris()
 
-    }, [session?.accessToken]);
+    }, [(session as any)?.accessToken]);
 
     return { horauns }
 
@@ -53,20 +54,24 @@ type HoraDosProps = {
     "hora_courses" : "ca"
 }
 */
-export const useHoraDos = ({hora_numbro_uns}) => {
+type UseHoraDosParams = { hora_numbro_uns: number | string };
+type UseHoraDosReturn = { horados: HoraDosProps[] };
+
+export const useHoraDos = ({hora_numbro_uns}: UseHoraDosParams): UseHoraDosReturn => {
     const { data: session } = useAuth();
     const [horados, setHorados] = useState<HoraDosProps[]>([]);
     useEffect(() => {
         const controller = new AbortController();
         const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-        if (!session?.accessToken) return;
+        const accessToken = (session as any)?.accessToken as string | undefined;
+        if (!accessToken || !backendUrl) return;
 
         async function fetchAbecedaris() {
-            const res = await axios.post<{ hora_uns: HoraDosProps[] }>(
+            const res = await axios.post<{ hora_dos: HoraDosProps[] }>(
                 `${backendUrl}/hora/hora_dos`,
-                { hora_numbro_uns: hora_numbro_uns},
+                { hora_numbro_uns: Number(hora_numbro_uns)},
                 {
-                    headers: { Authorization: `Bearer ${session.accessToken}` },
+                    headers: { Authorization: `Bearer ${accessToken}` },
                     signal: controller.signal,
                 }
             );
@@ -74,7 +79,7 @@ export const useHoraDos = ({hora_numbro_uns}) => {
         }
         fetchAbecedaris()
 
-    }, [session?.accessToken, hora_numbro_uns]);
+    }, [(session as any)?.accessToken, hora_numbro_uns]);
     
     return { horados }
 
@@ -105,22 +110,26 @@ export type HoraTresProps = {
 }
 
 
-export const useHoraTres = ({hora_numbro_uns, hora_numbro_dos}) => {
+type UseHoraTresParams = { hora_numbro_uns: number | string; hora_numbro_dos: number | string };
+type UseHoraTresReturn = { horatres: HoraTresProps[] };
+
+export const useHoraTres = ({hora_numbro_uns, hora_numbro_dos}: UseHoraTresParams): UseHoraTresReturn => {
     const { data: session } = useAuth();
     const [horatres, setHoratres] = useState<HoraTresProps[]>([]);
     useEffect(() => {
         const controller = new AbortController();
         const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-        if (!session?.accessToken) return;
+        const accessToken = (session as any)?.accessToken as string | undefined;
+        if (!accessToken || !backendUrl) return;
 
         async function fetchAbecedaris() {
-            const res = await axios.post<{ hora_uns: HoraTresProps[] }>(
+            const res = await axios.post<{ hora_tres: HoraTresProps[] }>(
                 `${backendUrl}/hora/hora_tres`,
-                { hora_numbro_uns: hora_numbro_uns,
-                  hora_numbro_dos: hora_numbro_dos,  
+                { hora_numbro_uns: Number(hora_numbro_uns),
+                  hora_numbro_dos: Number(hora_numbro_dos),  
                 },
                 {
-                    headers: { Authorization: `Bearer ${session.accessToken}` },
+                    headers: { Authorization: `Bearer ${accessToken}` },
                     signal: controller.signal,
                 }
             );
@@ -129,7 +138,7 @@ export const useHoraTres = ({hora_numbro_uns, hora_numbro_dos}) => {
 
         fetchAbecedaris()
     
-    }, [session?.accessToken, hora_numbro_uns, hora_numbro_dos]);
+    }, [(session as any)?.accessToken, hora_numbro_uns, hora_numbro_dos]);
 
     return { horatres }
 };

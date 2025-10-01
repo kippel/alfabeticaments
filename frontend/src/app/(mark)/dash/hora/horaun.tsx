@@ -2,11 +2,15 @@
 import Link from "next/link";
 
 
+type HoraUnPageProps = {
+    hora_numbro_uns: string | number;
+}
+
 export const  HoraUnPage = ({
     hora_numbro_uns
-}) => {
+}: HoraUnPageProps) => {
 
-    const href = `/dash/hora/${hora_numbro_uns}`
+    const href = `/dash/hora/${encodeURIComponent(String(hora_numbro_uns))}`
 
     return (
         <Link href={href}>

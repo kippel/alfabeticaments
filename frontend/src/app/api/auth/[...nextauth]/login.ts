@@ -17,8 +17,12 @@ export async function login(username: string, password: string): Promise<TokenRe
     formData.append("username", username);
     formData.append("password", password);
     
-    const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-    
+    const envUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
+    const backendUrl = envUrl.replace(/\/$/, "");
+    if (!backendUrl) {
+      throw new Error("NEXT_PUBLIC_BACKEND_URL is not configured");
+    }
+
     const res = await axios.post<TokenResponse>(`${backendUrl}/auth/token`, formData, {
         headers: {
             "Content-Type": "application/x-www-form-urlencoded",

@@ -39,18 +39,25 @@ export type AbcedarisProps = {
 
 
 
-export const useAbcedaris = () => {
+type UseAbcedarisReturn = {
+  abcedaris: AbcedarisProps[];
+  loading: boolean;
+  error: string | null;
+};
+
+export const useAbcedaris = (): UseAbcedarisReturn => {
   const [abcedaris, setAbcedaris] = useState<AbcedarisProps[]>([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const { data: session } = useAuth();
   const { courses } = useCourses();
+  const accessToken = (session as any)?.accessToken as string | undefined;
 
   useEffect(() => {
     const controller = new AbortController();
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-    if (!session?.accessToken || !backendUrl) return;
+    if (!accessToken || !backendUrl) return;
 
     async function fetchAbecedaris() {
       setLoading(true);
@@ -60,7 +67,7 @@ export const useAbcedaris = () => {
           `${backendUrl}/abc/abcedaris`,
           { abc_courses: courses },
           {
-            headers: { Authorization: `Bearer ${session.accessToken}` },
+            headers: { Authorization: `Bearer ${accessToken}` },
             signal: controller.signal,
           }
         );
@@ -77,7 +84,7 @@ export const useAbcedaris = () => {
     fetchAbecedaris();
 
     return () => controller.abort();
-  }, [session?.accessToken, courses]);
+  }, [accessToken, courses]);
 
   return { abcedaris, loading, error };
 };
@@ -125,19 +132,24 @@ type AbcedListType = {
   abcedaris_list: AbcedType[];
 };
 
-export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListProps) => {
+type UseAbcedListReturn = { abcedlist: AbcedType[] };
+
+export const useAbcedList = (
+  { abcedaris_list,  abcedaris_palabras }: AbcedListProps
+): UseAbcedListReturn => {
   const [abcedlist, setAbcedList] = useState<AbcedType[]>([]);
   const { data: session } = useAuth();
   const { courses } = useCourses();
+  const accessToken = (session as any)?.accessToken as string | undefined;
   
   useEffect(() => {
     const controller = new AbortController();
     const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
-    if (!session?.accessToken || !backendUrl) return;
+    if (!accessToken || !backendUrl) return;
 
     async function fetchAbecedList() {
-  
-      const res = await axios.post(
+      type AbcedListApiResponse = { abc_list: AbcedType[] };
+      const res = await axios.post<AbcedListApiResponse>(
         `${backendUrl}/abc/abcedaris_list`,
         {
           abcedaris_courses: courses,
@@ -145,7 +157,7 @@ export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListP
           abcedaris_palabras: abcedaris_palabras,
         },
         {
-          headers: { Authorization: `Bearer ${session.accessToken}` },
+          headers: { Authorization: `Bearer ${accessToken}` },
           signal: controller.signal,
         }
       );
@@ -153,7 +165,7 @@ export const useAbcedList = ({ abcedaris_list,  abcedaris_palabras }: AbcedListP
     }
 
     fetchAbecedList();
-  }, [session?.accessToken, courses, abcedaris_list, abcedaris_palabras]);
+  }, [accessToken, courses, abcedaris_list, abcedaris_palabras]);
   
   return { abcedlist };
 };
