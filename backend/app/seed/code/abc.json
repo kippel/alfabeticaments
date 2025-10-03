@@ -163,7 +163,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "pa",
-                    "abcedaris_voice_mp3": "/mp3/ca/pa.wav",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/pa.wav",
                     "abcedaris_vocals_images": "/images/bread.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -171,7 +171,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_lletres": "sol",
                     "abcedaris_dos_id": 1,
-                    "abcedaris_voice_mp3": "/mp3/ca/sol.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/sol.mp3",
                     "abcedaris_vocals_images": "/images/sun.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -179,7 +179,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "ou",
-                    "abcedaris_voice_mp3": "/mp3/ca/ou.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ou.mp3",
                     "abcedaris_vocals_images": "/images/egg.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -187,7 +187,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "col",
-                    "abcedaris_voice_mp3": "/mp3/ca/col.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/col.mp3",
                     "abcedaris_vocals_images": "/images/cabbage.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -195,7 +195,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "ull",
-                    "abcedaris_voice_mp3": "/mp3/ca/ull.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ull.mp3",
                     "abcedaris_vocals_images": "/images/eye.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -203,7 +203,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "dau",
-                    "abcedaris_voice_mp3": "/mp3/ca/dau.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/dau.mp3",
                     "abcedaris_vocals_images": "/images/dice.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -211,7 +211,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_list_id" : 2,
-                    "abcedaris_voice_mp3": "/mp3/ca/pa.wav",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/pa.wav",
                     "abcedaris_vocals_images": "/images/bread.svg",
                     "abcedaris_lletres": "pa",
                     "abcedaris_world" :[
@@ -231,7 +231,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "vi",
-                    "abcedaris_voice_mp3": "/mp3/ca/vi.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/vi.mp3",
                     "abcedaris_vocals_images": "/images/wine.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -239,7 +239,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "mà",
-                    "abcedaris_voice_mp3": "/mp3/ca/ma.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ma.mp3",
                     "abcedaris_vocals_images": "/images/hand.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -247,7 +247,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "sí",
-                    "abcedaris_voice_mp3": "/mp3/ca/si.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/si.mp3",
                     "abcedaris_vocals_images": "/images/yes.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -255,7 +255,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "os",
-                    "abcedaris_voice_mp3": "/mp3/ca/bone.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/bone.mp3",
                     "abcedaris_vocals_images": "/images/bone.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -263,7 +263,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "un",
-                    "abcedaris_voice_mp3": "/mp3/ca/un.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/un.mp3",
                     "abcedaris_vocals_images": "/images/one.svg",
                     "abcedaris_list_id" : 1
                 },{
@@ -271,7 +271,7 @@
                     "abcedaris_number_bar": 1,
                     "abcedaris_dos_id": 1,
                     "abcedaris_lletres": "món",
-                    "abcedaris_voice_mp3": "/mp3/ca/mon.mp3",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/mon.mp3",
                     "abcedaris_vocals_images": "/images/world.svg",
                     "abcedaris_list_id" : 1
                 }
