@@ -59,10 +59,6 @@
                 "abc_id": 11,
                 "abc_title": "Monosíl.labs 12",
                 "abc_lists" : 1
-            },{
-                "abc_id": 12,
-                "abc_title": "Monosíl.labs 13",
-                "abc_lists" : 1
             }
 
         ]
@@ -276,6 +272,612 @@
                     "abcedaris_list_id" : 1
                 }
             ]           
+        },{
+            "abcedaris_id" : 2,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "ós",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/bear.mp3",
+                    "abcedaris_vocals_images": "/images/bear.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "dit",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/finger.mp3",
+                    "abcedaris_vocals_images": "/images/finger.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "all",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/garlic.mp3",
+                    "abcedaris_vocals_images": "/images/garlic.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "joc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/game.mp3",
+                    "abcedaris_vocals_images": "/images/game.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "or",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/gold.mp3",
+                    "abcedaris_vocals_images": "/images/gold.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pou",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/well.mp3",
+                    "abcedaris_vocals_images": "/images/well.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 3,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "nen",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/child.mp3",
+                    "abcedaris_vocals_images": "/images/child.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "nou",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nine.mp3",
+                    "abcedaris_vocals_images": "/images/nine.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "niu",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nest.mp3",
+                    "abcedaris_vocals_images": "/images/nest.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "neu",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/snow.mp3",
+                    "abcedaris_vocals_images": "/images/snow.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "nas",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nose.mp3",
+                    "abcedaris_vocals_images": "/images/nose.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "nus",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/knot.mp3",
+                    "abcedaris_vocals_images": "/images/knot.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 4,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "peu",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/foot.mp3",
+                    "abcedaris_vocals_images": "/images/foot.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "porc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/pig.mp3",
+                    "abcedaris_vocals_images": "/images/pig.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pic",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/mountain_dos.mp3",
+                    "abcedaris_vocals_images": "/images/mountain_dos.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pot",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/honey-pot.mp3",
+                    "abcedaris_vocals_images": "/images/honey-pot.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pal",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nino.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pont",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/bridge.mp3",
+                    "abcedaris_vocals_images": "/images/bridge.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 5,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "sal",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/salt.mp3",
+                    "abcedaris_vocals_images": "/images/salt.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "serp",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/snake.mp3",
+                    "abcedaris_vocals_images": "/images/snake.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "suc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/juice.mp3",
+                    "abcedaris_vocals_images": "/images/juice.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "set",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/digit.mp3",
+                    "abcedaris_vocals_images": "/images/digit.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "sang",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/blood.mp3",
+                    "abcedaris_vocals_images": "/images/blood.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "sis",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/six.mp3",
+                    "abcedaris_vocals_images": "/images/six.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 6,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "tronc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/trunk.mp3",
+                    "abcedaris_vocals_images": "/images/trunk.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "blat",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/wheat.mp3",
+                    "abcedaris_vocals_images": "/images/wheat.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "trist",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/sad.mp3",
+                    "abcedaris_vocals_images": "/images/sad.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "blau",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/blue.mp3",
+                    "abcedaris_vocals_images": "/images/blue.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "tren",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/train.mp3",
+                    "abcedaris_vocals_images": "/images/train.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "blanc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/white.mp3",
+                    "abcedaris_vocals_images": "/images/white.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 7,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "gris",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/gray.mp3",
+                    "abcedaris_vocals_images": "/images/gray.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "gall",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/rooster.mp3",
+                    "abcedaris_vocals_images": "/images/rooster.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "gel",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/snow.mp3",
+                    "abcedaris_vocals_images": "/images/snow.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "gats",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/cat.mp3",
+                    "abcedaris_vocals_images": "/images/cat.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "gos",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/dog.mp3",
+                    "abcedaris_vocals_images": "/images/dog.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "got",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/glass.mp3",
+                    "abcedaris_vocals_images": "/images/glass.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 8,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "clau",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/key.mp3",
+                    "abcedaris_vocals_images": "/images/key.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "mal",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nina.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "cos",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nino.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "mel",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/honey-pot.mp3",
+                    "abcedaris_vocals_images": "/images/honey-pot.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "cuc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/worm.mp3",
+                    "abcedaris_vocals_images": "/images/worm.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "mar",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/sea.mp3",
+                    "abcedaris_vocals_images": "/images/sea.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 9,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "fil",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/fashion.mp3",
+                    "abcedaris_vocals_images": "/images/fashion.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "far",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/lighthouse.mp3",
+                    "abcedaris_vocals_images": "/images/lighthouse.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "flor",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/flower.mp3",
+                    "abcedaris_vocals_images": "/images/flower.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "foc",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/fire.mp3",
+                    "abcedaris_vocals_images": "/images/fire.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "fum",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/chimney.mp3",
+                    "abcedaris_vocals_images": "/images/chimney.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "font",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/fountain.mp3",
+                    "abcedaris_vocals_images": "/images/fountain.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 10,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llit",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/bed.mp3",
+                    "abcedaris_vocals_images": "/images/bed.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llac",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nina.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llet",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/milk.mp3",
+                    "abcedaris_vocals_images": "/images/milk.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llamp",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/lightning.mp3",
+                    "abcedaris_vocals_images": "/images/lightning.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llop",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/wolf.mp3",
+                    "abcedaris_vocals_images": "/images/wolf.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "llac",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/lake.mp3",
+                    "abcedaris_vocals_images": "/images/lake.svg",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 11,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "monosillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "drap",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/towel.mp3",
+                    "abcedaris_vocals_images": "/images/towel.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "deu",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ten.mp3",
+                    "abcedaris_vocals_images": "/images/ten.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "drac",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/dragon.mp3",
+                    "abcedaris_vocals_images": "/images/dragon.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "dit",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nino.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "dos",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nino.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "dau",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/nino.mp3",
+                    "abcedaris_vocals_images": "",
+                    "abcedaris_list_id" : 1
+                }
+            ]
+        },{
+            "abcedaris_id" : 0,
+            "abcedaris_courses": "ca",
+            "abcedaris_palabras" : "bisillabs",
+            "abcedaris_list" : [
+                {
+                    "abcedaris_number": 1,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pala",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/pa.wav",
+                    "abcedaris_vocals_images": "/images/bread.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 2,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_lletres": "poma",
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/sol.mp3",
+                    "abcedaris_vocals_images": "/images/sun.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 3,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "puca",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ou.mp3",
+                    "abcedaris_vocals_images": "/images/egg.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 4,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "panda",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/col.mp3",
+                    "abcedaris_vocals_images": "/images/cabbage.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 5,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "pera",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/ull.mp3",
+                    "abcedaris_vocals_images": "/images/eye.svg",
+                    "abcedaris_list_id" : 1
+                },{
+                    "abcedaris_number": 6,
+                    "abcedaris_number_bar": 1,
+                    "abcedaris_dos_id": 1,
+                    "abcedaris_lletres": "ploma",
+                    "abcedaris_voice_mp3": "/mp3/ca/abc/dau.mp3",
+                    "abcedaris_vocals_images": "/images/dice.svg",
+                    "abcedaris_list_id" : 1
+                }
+
+            ]
         }
    ]
 }
