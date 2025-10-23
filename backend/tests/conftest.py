@@ -1,30 +1,33 @@
+from fastapi.testclient import TestClient
 import pytest
-import asyncio
-from httpx import AsyncClient, ASGITransport
-from motor.motor_asyncio import AsyncIOMotorClient
-from app.main import app
+import os
+import logging
+from jose import jwt
+from dotenv import load_dotenv  
 
-@pytest.fixture(scope="function")
-def event_loop():
-    """Create an instance of the default event loop for each test."""
-    loop = asyncio.get_event_loop_policy().new_event_loop()
-    yield loop
-    loop.close()
+from app.main import app    
 
-@pytest.fixture(scope="session")
-def mongo_url():
-    # conecta al servicio Mongo ya levantado por docker-compose
-    return "mongodb://mongo:27017/testdb"
+# Suppress MongoDB logging during tests
+logging.getLogger("pymongo").setLevel(logging.WARNING)
+logging.getLogger("motor").setLevel(logging.WARNING)
 
-@pytest.fixture(autouse=True)
-async def mock_db(monkeypatch, mongo_url):
-    client = AsyncIOMotorClient(mongo_url)
-    db = client.get_default_database()
-    monkeypatch.setattr("app.database.database.db", db)
-    yield db
-    client.close()
+load_dotenv()
+
+# Get environment variables with fallbacks
+SECRET_KEY = os.getenv("AUTH_SECRET_KEY")
+ALGORITHM = os.getenv("AUTH_ALGORITHM")
+
+
+
 
 @pytest.fixture
-async def async_client():
-    async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+def test_client():
+    print("Setting up Test Client")
+    with TestClient(app) as client:
         yield client
+
+def create_test_token():
+    """Genera un JWT de prueba válido"""
+    payload = {"sub": "testuser", "id": 1}
+    token = jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
+    return token

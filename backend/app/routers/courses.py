@@ -9,7 +9,6 @@ router = APIRouter(prefix="/courses", tags=["courses"])
 @router.get("/blue")
 async def courses_blue(user: user_dependency, db: db_dependency): 
     courses_all = [serializes(doc) async for doc in db["courses"].find()]
-
     return { "courses" : courses_all}
 
 

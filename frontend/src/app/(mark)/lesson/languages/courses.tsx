@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import axios from "axios";
+import axios, { AxiosError } from "axios";
 import CoursesRed from "./courses-red";
 import { useSession } from "next-auth/react"
 
@@ -18,77 +18,85 @@ type UserCoursesType = {
   courses: string;
 };
 
-
+type ApiResponse = {
+  languages: LanguagesProp[];
+  user_courses: UserCoursesType;
+};
 
 const Courses = () => {
   const [languages, setLanguages] = useState<LanguagesProp[]>([]);
-  const [index, setIndex] = useState<boolean>(true);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
   const [userCourses, setUserCourses] = useState<UserCoursesType | null>(null);
 
   const { data: session } = useSession();
   
-  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL;
+  const backendUrl = process.env.NEXT_PUBLIC_BACKEND_URL || "http://localhost:4000";
   
   useEffect(() => {
-
-    //if (!session?.user?.id) return;
+    if (!session?.accessToken) return;
 
     async function fetchPosts() {
-      
-      
-      const res = await axios.post(`${backendUrl}/courses/uns`,{},   {
+      try {
+        setLoading(true);
+        setError(null);
+        
+        const res = await axios.post<ApiResponse>(`${backendUrl}/courses/uns`, {}, {
           headers: {
-              Authorization: `Bearer ${session?.accessToken}`, 
+            Authorization: `Bearer ${session.accessToken}`, 
           },
-      });
-      
-      setIndex(false);
-      setLanguages(res.data.languages);
-      setUserCourses(res.data.user_courses);
-      
+        });
+        
+        setLanguages(res.data.languages);
+        setUserCourses(res.data.user_courses);
+      } catch (err) {
+        const axiosErr = err as AxiosError<{ detail?: string }>;
+        setError(axiosErr.response?.data?.detail ?? "Error loading courses");
+      } finally {
+        setLoading(false);
+      }
     }
 
     fetchPosts();
-  }, [backendUrl, session]);
+  }, [backendUrl, session?.accessToken]);
 
-  const onClick = (courses: string) => {
-  
-    async function red() {
-
-      
-        const res = await axios.post(`${backendUrl}/courses/dos`, {coursesId: courses},  {
+  const onClick = async (courses: string) => {
+    if (!session?.accessToken) return;
+    
+    try {
+      const res = await axios.post<{ user_courses: UserCoursesType }>(`${backendUrl}/courses/dos`, 
+        { coursesId: courses }, 
+        {
           headers: {
-              Authorization: `Bearer ${session?.accessToken}`, 
+            Authorization: `Bearer ${session.accessToken}`, 
           },
-        });
-
-
-        
-        // TODO: courses
-        setUserCourses(res.data.user_courses); 
+        }
+      );
+      
+      setUserCourses(res.data.user_courses); 
+    } catch (err) {
+      const axiosErr = err as AxiosError<{ detail?: string }>;
+      setError(axiosErr.response?.data?.detail ?? "Error updating course");
     }
-    red();
-    //console.log(courses)
-       
   };
 
 
-  if (index) return <div>Loading...</div>;
+  if (loading) return <div>Loading...</div>;
   
+  if (error) return <div className="text-red-600">Error: {error}</div>;
   
   return (
     <div className="pt-6 grid grid-cols-2 lg:grid-cols-[repeat(auto-fill, minmax(210px, 1fr))] gap-4">
       {languages.map((word) => (
-          
-          <CoursesRed key={word._id}
-            id={word._id}
-            title={word.title}
-            images={word.image_src} 
-            courses={word.courses}
-            onClick={onClick}
-            active={word.courses == userCourses?.courses}
-          />
-        
+        <CoursesRed 
+          key={word._id}
+          id={word._id}
+          title={word.title}
+          images={word.image_src} 
+          courses={word.courses}
+          onClick={onClick}
+          active={word.courses === userCourses?.courses}
+        />
       ))}
     </div>
   );

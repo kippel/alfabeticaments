@@ -1,32 +1,29 @@
 import pytest
-from jose import jwt
-import os
+from tests.conftest import create_test_token
 
-# This function does not need to change
-SECRET_KEY = os.getenv("AUTH_SECRET_KEY")
-ALGORITHM = os.getenv("AUTH_ALGORITHM")
 
-def create_test_token(username="kippel", user_id="qwerty"):
-    payload = {"sub": username, "id": user_id}
-    return jwt.encode(payload, SECRET_KEY, algorithm=ALGORITHM)
-
-# Mark test as asyncio, change to async def, use async_client, and await the call
-@pytest.mark.asyncio
-async def test_ping(async_client):
-    response = await async_client.post("/")
-    assert response.status_code == 200
-    json_response = response.json()
-    assert "message" in json_response
-    assert "user" in json_response
-    assert "courses" in json_response
-    assert "abcedaris" in json_response
-
-# Mark test as asyncio, change to async def, use async_client, and await the call
-@pytest.mark.asyncio
-async def test_courses_red(async_client):
+def test_blue_courses_route(test_client):
+    """Test GET /courses/blue endpoint"""
+        
     token = create_test_token()
     headers = {"Authorization": f"Bearer {token}"}
-    print(token, headers)
-    response = await async_client.get("/courses/red", headers=headers)
+    response = test_client.get("/courses/blue", headers=headers)
     assert response.status_code == 200
-    assert "courses" in response.json()
+    data = response.json()
+    assert "courses" in data
+    assert isinstance(data["courses"], list)
+
+    # Exemple d'assertió addicional
+    assert len(data["courses"]) == 2 
+    
+    if data["courses"]:  # Només comprovem si hi ha cursos
+
+        assert data["courses"][0]["title"] == "Catala"
+        assert data["courses"][0]["image_src"] == "/flag/Catala.svg"
+        assert data["courses"][0]["courses"] == "ca"
+
+        assert data["courses"][1]["title"] == "Español"
+        assert data["courses"][1]["image_src"] == "/flag/Espanol.svg"
+        assert data["courses"][1]["courses"] == "es"
+        
+     

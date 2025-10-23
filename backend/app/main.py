@@ -3,7 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from app.database.database import db
 from app.database.models import Users
-from .routers import auth, courses, abc, hora, tests
+from .routers import auth, courses, abc, hora
 from app.lib import serializes
 import logging
 
@@ -25,10 +25,14 @@ app.add_middleware(
 )
 
 
+#@app.get("/health")
+#async def health_check():
+#    return {"status": "ok"}
 
-@app.post("/")
+
+@app.get("/")
 async def root():
-
+    '''  
     users_cursor = db.users.find()
     
     # Convertim a llista i serialitzem ObjectIds
@@ -41,11 +45,11 @@ async def root():
 
     courses_all = [serializes(cour) async for cour in courses]
     abcedaris = [serializes(abcedari) async for abcedari in abcedaris_abc]
-    return {"message": "Hello from FastAPI + MongoDB", "user" : users, "courses" : courses_all, "abcedaris" : abcedaris} 
+    '''
+    return {"message": "Hello from FastAPI + MongoDB"} 
 
 
 app.include_router(auth.router)
 app.include_router(courses.router)
 app.include_router(abc.router)
 app.include_router(hora.router)
-app.include_router(tests.router)
