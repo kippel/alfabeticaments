@@ -1,7 +1,11 @@
 from typing import Annotated
 from fastapi import Depends, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer
-from passlib.context import CryptContext
+try:
+    from passlib.context import CryptContext
+except Exception as _exc:
+    # Import may fail if passlib or its bcrypt backend isn't installed/configured.
+    CryptContext = None
 from jose import JWTError, jwt
 from dotenv import load_dotenv
 import os
@@ -18,7 +22,44 @@ def get_db():
 
 db_dependency = Annotated[any, Depends(get_db)]
 
-bcrypt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+# Try to create a bcrypt CryptContext. In minimal/dev environments the
+# underlying `bcrypt` library may be missing or incompatible which would
+# raise during import/initialization. In that case provide a lightweight
+# fallback that uses SHA256 (NOT for production, but useful for local seeding
+# and tests).
+if CryptContext is None:
+    print("Warning: passlib not importable; using SHA256 fallback for bcrypt_context")
+
+    class _SHA256Fallback:
+        def hash(self, plain: str) -> str:
+            import hashlib
+
+            return hashlib.sha256(plain.encode()).hexdigest()
+
+        def verify(self, plain: str, hashed: str) -> bool:
+            import hashlib
+
+            return hashlib.sha256(plain.encode()).hexdigest() == hashed
+
+    bcrypt_context = _SHA256Fallback()
+else:
+    try:
+        bcrypt_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
+    except Exception as exc:
+        print("Warning: bcrypt/passlib backend not available; using SHA256 fallback:", exc)
+
+        class _SHA256Fallback:
+            def hash(self, plain: str) -> str:
+                import hashlib
+
+                return hashlib.sha256(plain.encode()).hexdigest()
+
+            def verify(self, plain: str, hashed: str) -> bool:
+                import hashlib
+
+                return hashlib.sha256(plain.encode()).hexdigest() == hashed
+
+        bcrypt_context = _SHA256Fallback()
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl="/auth/token")
 oauth2_bearer_dependency = Annotated[str, Depends(oauth2_bearer)]
 
