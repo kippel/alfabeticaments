@@ -1,0 +1,23 @@
+{
+  "Login": {
+    "title": "Inicia sessió",
+    "register" : "Registra't",
+    "alfabeticament" : "Alfabeticament",
+    "username" : "Nom d'usuari",
+    "password" : "Contrasenya",
+    "login" : "Iniciar sessió", 
+    "username_required" : "El nom d'usuari és requerido",
+    "password_required" : "La contrasenya és requerida"
+  },
+  "Register": {
+    "alfabeticament" : "Alfabeticament",
+    "login" : "Login",
+    "register" : "Registra't",
+    "username" : "Nom d'usuari",
+    "password" : "Contrasenya",
+    "confirm_password" : "Confirmar contrasenya",
+    "username_required" : "El nom d'usuari és requerido",
+    "password_required" : "La contrasenya és requerida",
+    "confirm_password_required" : "La contrasenya de confirmació és requerida"
+  }
+}

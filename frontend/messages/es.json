@@ -1,0 +1,23 @@
+{
+    "Login": {
+      "title": "Iniciar sesión",
+      "register" : "Regístrate",
+      "alfabeticament" : "Alfabéticamente",
+      "username" : "Nombre de usuario",
+      "password" : "Contraseña",
+      "login" : "Iniciar sesión", 
+      "username_required" : "El nombre de usuario es obligatorio",
+      "password_required" : "La contraseña es obligatoria"
+    },
+    "Register": {
+      "alfabeticament" : "Alfabéticamente",
+      "login" : "Iniciar sesión",
+      "register" : "Regístrate",
+      "username" : "Nombre de usuario",
+      "password" : "Contraseña",
+      "confirm_password" : "Confirmar contraseña",
+      "username_required" : "El nombre de usuario es obligatorio",
+      "password_required" : "La contraseña es obligatoria",
+      "confirm_password_required" : "La confirmación de contraseña es obligatoria"
+    }
+  }
