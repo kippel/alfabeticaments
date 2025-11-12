@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import {NextIntlClientProvider} from 'next-intl';
 
+import Providers from "@/components/Providers";
 
 
 const geistSans = Geist({
@@ -32,6 +33,7 @@ export default async function RootLayout({children}: Props) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Providers>
         <ThemeProvider
             attribute="class"
             defaultTheme="system"
@@ -42,6 +44,7 @@ export default async function RootLayout({children}: Props) {
         {children}
         </NextIntlClientProvider>
         </ThemeProvider>
+        </Providers>
       </body>
     </html>
   );

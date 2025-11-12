@@ -11,12 +11,12 @@ async def seed_user(db):
     await db.users.delete_many({})
     # Exemple de col·lecció i documents
 
-    raw_pw = "qwerty"
-    short_pw = hashlib.sha256(raw_pw.encode()).hexdigest()
+    #raw_pw = "qwerty"
+    #short_pw = hashlib.sha256(raw_pw.encode()).hexdigest()
 
     qwerty = bcrypt_context.hash("qwerty")
 
-    users = {"username": "admin_old", "password": qwerty}
+    users = {"username": "admin", "password": qwerty}
     
     #await db.users.insert_many(users)
     user = await db.users.insert_one(users)
