@@ -84,11 +84,11 @@ export function NavUser() {
             
            
             <DropdownMenuGroup>
-              <DropdownMenuItem>
+              <DropdownMenuItem onClick={() => router.push("/lesson/languages")}>
                  <Languages className="h-4 w-4" />
-                  <Link href="/lesson/languages">
+                  
                     Idiomas
-                  </Link>                
+                                  
               </DropdownMenuItem>
             </DropdownMenuGroup>
             <DropdownMenuSeparator />

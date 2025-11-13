@@ -1,8 +1,7 @@
 import os
 import asyncio
-import hashlib
 from app.database.deps import bcrypt_context
-
+from app.seed.seed_workouts import hora
 
 MONGO_URI = os.getenv("MONGO_URI", "mongodb://mongo:27017/mydatabase")
 
@@ -48,6 +47,7 @@ async def dev_app():
    
     user_id = await seed_user(db)
 
+    await hora(db, user_id)
     client.close()
 
 

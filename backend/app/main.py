@@ -5,7 +5,7 @@ from app.database.database import db
 from app.database.models import Users
 from app.lib import serializes_list, serializes
 from typing import List
-from .routers import auth, courses
+from .routers import auth, courses, hora
 #from app.lib import serializes
 import logging
 
@@ -45,3 +45,4 @@ async def root():
 
 app.include_router(auth.router)
 app.include_router(courses.router)
+app.include_router(hora.router)

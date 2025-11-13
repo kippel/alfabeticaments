@@ -1,0 +1,1689 @@
+{ "hora_uns" : [
+    { "hora_numbro_uns" : 1,
+      "hora_courses" : "ca"},
+    { "hora_numbro_uns" : 2,
+      "hora_courses" : "ca"}
+],
+  "hora_dos" : [
+    { 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 1,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 2,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 3,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 4,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 5,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 6,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 7,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 8,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 9,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 10,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 11,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 1,
+      "hora_numbro_dos" : 12,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 1,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 2,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 3,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 4,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 5,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 6,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 7,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 8,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 9,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 10,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 11,
+      "hora_courses" : "ca"
+    },{ 
+      "hora_numbro_uns" : 2,
+      "hora_numbro_dos" : 12,
+      "hora_courses" : "ca"
+    }
+
+
+  ],
+    
+
+  "hora_tres" : [
+    {"hora_id": 1,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/la-una.mp3",
+     "hora_expressio" : "La una",
+     "hora" : "1:00",
+     "hora_courses" : "ca"
+    }, {
+     "hora_id": 2,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/un-quart-de-dues.mp3",
+     "hora_expressio" : "Un quart de dues",
+     "hora" : "1:15",
+     "hora_courses" : "ca"
+    }, {
+     "hora_id": 3,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/dos-quarts-de-dues.mp3",
+     "hora_expressio" : "Dos quarts de dues",
+     "hora" : "1:30",
+     "hora_courses" : "ca"
+    }, {
+     "hora_id": 4,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/tres-quarts-de-dues.mp3",
+     "hora_expressio" : "Tres quarts de dues",
+     "hora" : "1:45",
+     "hora_courses" : "ca"
+    },
+    {"hora_id": 1,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 2,
+     "hora_voice_mp3" : "/mp3/ca/hora/les-dues.mp3",
+     "hora_expressio" : "Les dues",
+     "hora" : "2:00",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 2,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 2,
+     "hora_voice_mp3" : "/mp3/ca/hora/un-quart-de-tres.mp3",
+     "hora_expressio" : "Un quart de tres",
+     "hora" : "2:15",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 3,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 2,
+     "hora_voice_mp3" : "/mp3/ca/hora/dos-quarts-de-tres.mp3",
+     "hora_expressio" : "Dos quarts de tres",
+     "hora" : "2:30",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 4,
+     "hora_numbro_uns" : 1,
+     "hora_numbro_dos" : 2,
+     "hora_voice_mp3" : "/mp3/ca/hora/tres-quarts-de-tres.mp3",
+     "hora_expressio" : "Tres quarts de tres",
+     "hora" : "1:45",
+     "hora_courses" : "ca"
+    },
+    {"hora_id": 1,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/la-una-i-cinc-minuts.mp3",
+     "hora_expressio" : "La una",
+     "hora" : "1:00",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 2,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/les-una-i-cinc-minuts.mp3",
+     "hora_expressio" : "Les una i cinc minuts",
+     "hora" : "1:05",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 3,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/un-quart-menys-cinc-de-dues.mp3",
+     "hora_expressio" : "Un quart menys cinc de dues",
+     "hora" : "1:10",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 4,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/un-quart-de-dues.mp3",
+     "hora_expressio" : "Un quart de dues",
+     "hora" : "1:15",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 5,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/un-quart-i-cinc-de-dues.mp3",
+     "hora_expressio" : "Un quart i cinc de dues",
+     "hora" : "1:20",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 6,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/dos-quarts-menys-cinc-de-dues.mp3",
+     "hora_expressio" : "Dos quarts menys cinc de dues",
+     "hora" : "1:25",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 7,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/dos-quarts-de-dues.mp3",
+     "hora_expressio" : "Dos quarts de dues",
+     "hora" : "1:30",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 8,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/dos-quarts-i-cinc-de-dues.mp3",
+     "hora_expressio" : "Dos quarts i cinc de dues",
+     "hora" : "1:35",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 9,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/tres-quarts-menys-cinc-de-dues.mp3",
+     "hora_expressio" : "Tres quarts menys cinc de dues",
+     "hora" : "1:40",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 10,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/tres-quarts-de-dues.mp3",
+     "hora_expressio" : "Tres quarts de dues",
+     "hora" : "1:45",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 11,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/tres-quarts-i-cinc-de-dues.mp3",
+     "hora_expressio" : "Tres quarts i cinc de dues",
+     "hora" : "1:50",
+     "hora_courses" : "ca"
+    },{
+     "hora_id": 12,
+     "hora_numbro_uns" : 2,
+     "hora_numbro_dos" : 1,
+     "hora_voice_mp3" : "/mp3/ca/hora/cinc-minuts-per-a-les-dues.mp3",
+     "hora_expressio" : "Cinc minuts per a les dues",
+     "hora" : "1:55",
+     "hora_courses" : "ca"
+    },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/les-dues.mp3",
+    "hora_expressio": "Les dues",
+    "hora": "2:00",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/les-dues-i-cinc.mp3",
+    "hora_expressio": "Les dues i cinc minuts",
+    "hora": "2:05",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-tres.mp3",
+    "hora_expressio": "Un quart menys cinc de tres",
+    "hora": "2:10",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-tres.mp3",
+    "hora_expressio": "Un quart de tres",
+    "hora": "2:15",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-tres.mp3",
+    "hora_expressio": "Un quart i cinc de tres",
+    "hora": "2:20",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-tres.mp3",
+    "hora_expressio": "Dos quarts menys cinc de tres",
+    "hora": "2:25",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-tres.mp3",
+    "hora_expressio": "Dos quarts de tres",
+    "hora": "2:30",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-tres.mp3",
+    "hora_expressio": "Dos quarts i cinc de tres",
+    "hora": "2:35",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-tres.mp3",
+    "hora_expressio": "Tres quarts menys cinc de tres",
+    "hora": "2:40",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-tres.mp3",
+    "hora_expressio": "Tres quarts de tres",
+    "hora": "2:45",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-tres.mp3",
+    "hora_expressio": "Tres quarts i cinc de tres",
+    "hora": "2:50",
+    "hora_courses": "ca"
+  },
+  {
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 2,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-tres.mp3",
+    "hora_expressio": "Cinc minuts per a les tres",
+    "hora": "2:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/les-tres.mp3",
+    "hora_expressio": "Les tres",
+    "hora": "3:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/les-tres-i-cinc.mp3",
+    "hora_expressio": "Les tres i cinc minuts",
+    "hora": "3:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-quatre.mp3",
+    "hora_expressio": "Un quart menys cinc de quatre",
+    "hora": "3:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-quatre.mp3",
+    "hora_expressio": "Un quart de quatre",
+    "hora": "3:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-quatre.mp3",
+    "hora_expressio": "Un quart i cinc de quatre",
+    "hora": "3:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-quatre.mp3",
+    "hora_expressio": "Dos quarts menys cinc de quatre",
+    "hora": "3:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-quatre.mp3",
+    "hora_expressio": "Dos quarts de quatre",
+    "hora": "3:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-quatre.mp3",
+    "hora_expressio": "Dos quarts i cinc de quatre",
+    "hora": "3:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-quatre.mp3",
+    "hora_expressio": "Tres quarts menys cinc de quatre",
+    "hora": "3:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-quatre.mp3",
+    "hora_expressio": "Tres quarts de quatre",
+    "hora": "3:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-quatre.mp3",
+    "hora_expressio": "Tres quarts i cinc de quatre",
+    "hora": "3:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-quatre.mp3",
+    "hora_expressio": "Cinc minuts per a les quatre",
+    "hora": "3:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/les-quatre.mp3",
+    "hora_expressio": "Les quatre",
+    "hora": "4:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/les-quatre-i-cinc.mp3",
+    "hora_expressio": "Les quatre i cinc minuts",
+    "hora": "4:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-cinc.mp3",
+    "hora_expressio": "Un quart menys cinc de cinc",
+    "hora": "4:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-cinc.mp3",
+    "hora_expressio": "Un quart de cinc",
+    "hora": "4:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-cinc.mp3",
+    "hora_expressio": "Un quart i cinc de cinc",
+    "hora": "4:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-cinc.mp3",
+    "hora_expressio": "Dos quarts menys cinc de cinc",
+    "hora": "4:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-cinc.mp3",
+    "hora_expressio": "Dos quarts de cinc",
+    "hora": "4:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-cinc.mp3",
+    "hora_expressio": "Dos quarts i cinc de cinc",
+    "hora": "4:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-cinc.mp3",
+    "hora_expressio": "Tres quarts menys cinc de cinc",
+    "hora": "4:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-cinc.mp3",
+    "hora_expressio": "Tres quarts de cinc",
+    "hora": "4:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-cinc.mp3",
+    "hora_expressio": "Tres quarts i cinc de cinc",
+    "hora": "4:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-cinc.mp3",
+    "hora_expressio": "Cinc minuts per a les cinc",
+    "hora": "4:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/les-cinc.mp3",
+    "hora_expressio": "Les cinc",
+    "hora": "5:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/les-cinc-i-cinc.mp3",
+    "hora_expressio": "Les cinc i cinc minuts",
+    "hora": "5:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-sis.mp3",
+    "hora_expressio": "Un quart menys cinc de sis",
+    "hora": "5:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-sis.mp3",
+    "hora_expressio": "Un quart de sis",
+    "hora": "5:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-sis.mp3",
+    "hora_expressio": "Un quart i cinc de sis",
+    "hora": "5:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-sis.mp3",
+    "hora_expressio": "Dos quarts menys cinc de sis",
+    "hora": "5:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-sis.mp3",
+    "hora_expressio": "Dos quarts de sis",
+    "hora": "5:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-sis.mp3",
+    "hora_expressio": "Dos quarts i cinc de sis",
+    "hora": "5:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-sis.mp3",
+    "hora_expressio": "Tres quarts menys cinc de sis",
+    "hora": "5:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-sis.mp3",
+    "hora_expressio": "Tres quarts de sis",
+    "hora": "5:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-sis.mp3",
+    "hora_expressio": "Tres quarts i cinc de sis",
+    "hora": "5:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-sis.mp3",
+    "hora_expressio": "Cinc minuts per a les sis",
+    "hora": "5:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/les-sis.mp3",
+    "hora_expressio": "Les sis",
+    "hora": "6:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/les-sis-i-cinc.mp3",
+    "hora_expressio": "Les sis i cinc minuts",
+    "hora": "6:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-set.mp3",
+    "hora_expressio": "Un quart menys cinc de set",
+    "hora": "6:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-set.mp3",
+    "hora_expressio": "Un quart de set",
+    "hora": "6:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-set.mp3",
+    "hora_expressio": "Un quart i cinc de set",
+    "hora": "6:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-set.mp3",
+    "hora_expressio": "Dos quarts menys cinc de set",
+    "hora": "6:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-set.mp3",
+    "hora_expressio": "Dos quarts de set",
+    "hora": "6:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-set.mp3",
+    "hora_expressio": "Dos quarts i cinc de set",
+    "hora": "6:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-set.mp3",
+    "hora_expressio": "Tres quarts menys cinc de set",
+    "hora": "6:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-set.mp3",
+    "hora_expressio": "Tres quarts de set",
+    "hora": "6:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-set.mp3",
+    "hora_expressio": "Tres quarts i cinc de set",
+    "hora": "6:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-set.mp3",
+    "hora_expressio": "Cinc minuts per a les set",
+    "hora": "6:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/les-set.mp3",
+    "hora_expressio": "Les set",
+    "hora": "7:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/les-set-i-cinc.mp3",
+    "hora_expressio": "Les set i cinc minuts",
+    "hora": "7:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-vuit.mp3",
+    "hora_expressio": "Un quart menys cinc de vuit",
+    "hora": "7:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-vuit.mp3",
+    "hora_expressio": "Un quart de vuit",
+    "hora": "7:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-vuit.mp3",
+    "hora_expressio": "Un quart i cinc de vuit",
+    "hora": "7:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-vuit.mp3",
+    "hora_expressio": "Dos quarts menys cinc de vuit",
+    "hora": "7:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-vuit.mp3",
+    "hora_expressio": "Dos quarts de vuit",
+    "hora": "7:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-vuit.mp3",
+    "hora_expressio": "Dos quarts i cinc de vuit",
+    "hora": "7:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-vuit.mp3",
+    "hora_expressio": "Tres quarts menys cinc de vuit",
+    "hora": "7:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-vuit.mp3",
+    "hora_expressio": "Tres quarts de vuit",
+    "hora": "7:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-vuit.mp3",
+    "hora_expressio": "Tres quarts i cinc de vuit",
+    "hora": "7:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-vuit.mp3",
+    "hora_expressio": "Cinc minuts per a les vuit",
+    "hora": "7:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/les-vuit.mp3",
+    "hora_expressio": "Les vuit",
+    "hora": "8:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/les-vuit-i-cinc.mp3",
+    "hora_expressio": "Les vuit i cinc minuts",
+    "hora": "8:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-nou.mp3",
+    "hora_expressio": "Un quart menys cinc de nou",
+    "hora": "8:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-nou.mp3",
+    "hora_expressio": "Un quart de nou",
+    "hora": "8:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-nou.mp3",
+    "hora_expressio": "Un quart i cinc de nou",
+    "hora": "8:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-nou.mp3",
+    "hora_expressio": "Dos quarts menys cinc de nou",
+    "hora": "8:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-nou.mp3",
+    "hora_expressio": "Dos quarts de nou",
+    "hora": "8:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-nou.mp3",
+    "hora_expressio": "Dos quarts i cinc de nou",
+    "hora": "8:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-nou.mp3",
+    "hora_expressio": "Tres quarts menys cinc de nou",
+    "hora": "8:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-nou.mp3",
+    "hora_expressio": "Tres quarts de nou",
+    "hora": "8:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-nou.mp3",
+    "hora_expressio": "Tres quarts i cinc de nou",
+    "hora": "8:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-nou.mp3",
+    "hora_expressio": "Cinc minuts per a les nou",
+    "hora": "8:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/les-nou.mp3",
+    "hora_expressio": "Les nou",
+    "hora": "9:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/les-nou-i-cinc.mp3",
+    "hora_expressio": "Les nou i cinc minuts",
+    "hora": "9:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-deu.mp3",
+    "hora_expressio": "Un quart menys cinc de deu",
+    "hora": "9:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-deu.mp3",
+    "hora_expressio": "Un quart de deu",
+    "hora": "9:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-deu.mp3",
+    "hora_expressio": "Un quart i cinc de deu",
+    "hora": "9:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-deu.mp3",
+    "hora_expressio": "Dos quarts menys cinc de deu",
+    "hora": "9:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-deu.mp3",
+    "hora_expressio": "Dos quarts de deu",
+    "hora": "9:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-deu.mp3",
+    "hora_expressio": "Dos quarts i cinc de deu",
+    "hora": "9:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-deu.mp3",
+    "hora_expressio": "Tres quarts menys cinc de deu",
+    "hora": "9:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-deu.mp3",
+    "hora_expressio": "Tres quarts de deu",
+    "hora": "9:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-deu.mp3",
+    "hora_expressio": "Tres quarts i cinc de deu",
+    "hora": "9:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-deu.mp3",
+    "hora_expressio": "Cinc minuts per a les deu",
+    "hora": "9:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/les-deu.mp3",
+    "hora_expressio": "Les deu",
+    "hora": "10:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/les-deu-i-cinc.mp3",
+    "hora_expressio": "Les deu i cinc minuts",
+    "hora": "10:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-onze.mp3",
+    "hora_expressio": "Un quart menys cinc d’onze",
+    "hora": "10:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-d-onze.mp3",
+    "hora_expressio": "Un quart d’onze",
+    "hora": "10:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-d-onze.mp3",
+    "hora_expressio": "Un quart i cinc d’onze",
+    "hora": "10:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-d-onze.mp3",
+    "hora_expressio": "Dos quarts menys cinc d’onze",
+    "hora": "10:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-d-onze.mp3",
+    "hora_expressio": "Dos quarts d’onze",
+    "hora": "10:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-d-onze.mp3",
+    "hora_expressio": "Dos quarts i cinc d’onze",
+    "hora": "10:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-d-onze.mp3",
+    "hora_expressio": "Tres quarts menys cinc d’onze",
+    "hora": "10:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-d-onze.mp3",
+    "hora_expressio": "Tres quarts d’onze",
+    "hora": "10:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-d-onze.mp3",
+    "hora_expressio": "Tres quarts i cinc d’onze",
+    "hora": "10:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-onze.mp3",
+    "hora_expressio": "Cinc minuts per a les onze",
+    "hora": "10:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/les-onze.mp3",
+    "hora_expressio": "Les onze",
+    "hora": "11:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/les-onze-i-cinc.mp3",
+    "hora_expressio": "Les onze i cinc minuts",
+    "hora": "11:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-de-dotze.mp3",
+    "hora_expressio": "Un quart menys cinc de dotze",
+    "hora": "11:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-dotze.mp3",
+    "hora_expressio": "Un quart de dotze",
+    "hora": "11:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-de-dotze.mp3",
+    "hora_expressio": "Un quart i cinc de dotze",
+    "hora": "11:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-de-dotze.mp3",
+    "hora_expressio": "Dos quarts menys cinc de dotze",
+    "hora": "11:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-dotze.mp3",
+    "hora_expressio": "Dos quarts de dotze",
+    "hora": "11:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-de-dotze.mp3",
+    "hora_expressio": "Dos quarts i cinc de dotze",
+    "hora": "11:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-de-dotze.mp3",
+    "hora_expressio": "Tres quarts menys cinc de dotze",
+    "hora": "11:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-dotze.mp3",
+    "hora_expressio": "Tres quarts de dotze",
+    "hora": "11:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-de-dotze.mp3",
+    "hora_expressio": "Tres quarts i cinc de dotze",
+    "hora": "11:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-les-dotze.mp3",
+    "hora_expressio": "Cinc minuts per a les dotze",
+    "hora": "11:55",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/les-dotze.mp3",
+    "hora_expressio": "Les dotze",
+    "hora": "12:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/les-dotze-i-cinc.mp3",
+    "hora_expressio": "Les dotze i cinc minuts",
+    "hora": "12:05",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-menys-cinc-d-una.mp3",
+    "hora_expressio": "Un quart menys cinc d’una",
+    "hora": "12:10",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-d-una.mp3",
+    "hora_expressio": "Un quart d’una",
+    "hora": "12:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 5,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-i-cinc-d-una.mp3",
+    "hora_expressio": "Un quart i cinc d’una",
+    "hora": "12:20",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 6,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-menys-cinc-d-una.mp3",
+    "hora_expressio": "Dos quarts menys cinc d’una",
+    "hora": "12:25",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 7,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-d-una.mp3",
+    "hora_expressio": "Dos quarts d’una",
+    "hora": "12:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 8,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-i-cinc-d-una.mp3",
+    "hora_expressio": "Dos quarts i cinc d’una",
+    "hora": "12:35",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 9,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-menys-cinc-d-una.mp3",
+    "hora_expressio": "Tres quarts menys cinc d’una",
+    "hora": "12:40",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 10,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-d-una.mp3",
+    "hora_expressio": "Tres quarts d’una",
+    "hora": "12:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 11,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-i-cinc-d-una.mp3",
+    "hora_expressio": "Tres quarts i cinc d’una",
+    "hora": "12:50",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 12,
+    "hora_numbro_uns": 2,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/cinc-minuts-per-a-la-una.mp3",
+    "hora_expressio": "Cinc minuts per a la una",
+    "hora": "12:55",
+    "hora_courses": "ca"
+  }, {
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/les-tres.mp3",
+    "hora_expressio": "Les tres",
+    "hora": "3:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-quatre.mp3",
+    "hora_expressio": "Un quart de quatre",
+    "hora": "3:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-quatre.mp3",
+    "hora_expressio": "Dos quarts de quatre",
+    "hora": "3:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 3,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-quatre.mp3",
+    "hora_expressio": "Tres quarts de quatre",
+    "hora": "3:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/les-quatre.mp3",
+    "hora_expressio": "Les quatre",
+    "hora": "4:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-cinc.mp3",
+    "hora_expressio": "Un quart de cinc",
+    "hora": "4:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-cinc.mp3",
+    "hora_expressio": "Dos quarts de cinc",
+    "hora": "4:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 4,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-cinc.mp3",
+    "hora_expressio": "Tres quarts de cinc",
+    "hora": "4:45",
+    "hora_courses": "ca"
+  }, {
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/les-cinc.mp3",
+    "hora_expressio": "Les cinc",
+    "hora": "5:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-sis.mp3",
+    "hora_expressio": "Un quart de sis",
+    "hora": "5:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-sis.mp3",
+    "hora_expressio": "Dos quarts de sis",
+    "hora": "5:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 5,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-sis.mp3",
+    "hora_expressio": "Tres quarts de sis",
+    "hora": "5:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/les-sis.mp3",
+    "hora_expressio": "Les sis",
+    "hora": "6:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-set.mp3",
+    "hora_expressio": "Un quart de set",
+    "hora": "6:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-set.mp3",
+    "hora_expressio": "Dos quarts de set",
+    "hora": "6:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 6,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-set.mp3",
+    "hora_expressio": "Tres quarts de set",
+    "hora": "6:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/les-set.mp3",
+    "hora_expressio": "Les set",
+    "hora": "7:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-vuit.mp3",
+    "hora_expressio": "Un quart de vuit",
+    "hora": "7:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-vuit.mp3",
+    "hora_expressio": "Dos quarts de vuit",
+    "hora": "7:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 7,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-vuit.mp3",
+    "hora_expressio": "Tres quarts de vuit",
+    "hora": "7:45",
+    "hora_courses": "ca"
+  }, {
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/les-vuit.mp3",
+    "hora_expressio": "Les vuit",
+    "hora": "8:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-nou.mp3",
+    "hora_expressio": "Un quart de nou",
+    "hora": "8:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-nou.mp3",
+    "hora_expressio": "Dos quarts de nou",
+    "hora": "8:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 8,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-nou.mp3",
+    "hora_expressio": "Tres quarts de nou",
+    "hora": "8:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/les-nou.mp3",
+    "hora_expressio": "Les nou",
+    "hora": "9:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-deu.mp3",
+    "hora_expressio": "Un quart de deu",
+    "hora": "9:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-deu.mp3",
+    "hora_expressio": "Dos quarts de deu",
+    "hora": "9:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 9,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-deu.mp3",
+    "hora_expressio": "Tres quarts de deu",
+    "hora": "9:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/les-deu.mp3",
+    "hora_expressio": "Les deu",
+    "hora": "10:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-d-onze.mp3",
+    "hora_expressio": "Un quart d'onze",
+    "hora": "10:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-d-onze.mp3",
+    "hora_expressio": "Dos quarts d'onze",
+    "hora": "10:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 10,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-d-onze.mp3",
+    "hora_expressio": "Tres quarts d'onze",
+    "hora": "10:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/les-onze.mp3",
+    "hora_expressio": "Les onze",
+    "hora": "11:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-de-dotze.mp3",
+    "hora_expressio": "Un quart de dotze",
+    "hora": "11:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-de-dotze.mp3",
+    "hora_expressio": "Dos quarts de dotze",
+    "hora": "11:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 11,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-de-dotze.mp3",
+    "hora_expressio": "Tres quarts de dotze",
+    "hora": "11:45",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 1,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/les-dotze.mp3",
+    "hora_expressio": "Les dotze",
+    "hora": "12:00",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 2,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/un-quart-d-una.mp3",
+    "hora_expressio": "Un quart d'una",
+    "hora": "12:15",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 3,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/dos-quarts-d-una.mp3",
+    "hora_expressio": "Dos quarts d'una",
+    "hora": "12:30",
+    "hora_courses": "ca"
+  },{
+    "hora_id": 4,
+    "hora_numbro_uns": 1,
+    "hora_numbro_dos": 12,
+    "hora_voice_mp3": "/mp3/ca/hora/tres-quarts-d-una.mp3",
+    "hora_expressio": "Tres quarts d'una",
+    "hora": "12:45",
+    "hora_courses": "ca"
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+]}
+
+	
+	
+	
+	
+	
+	
+	
+
+
